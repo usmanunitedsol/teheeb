@@ -1,0 +1,125 @@
+@import "global";
+
+.opening_hour_sec { background-color: #FEFBF8;
+    .image_with_text {
+        .timer_block, .text_block { padding-inline: 50px; box-sizing: border-box;
+            .title { font-size: 35px; line-height: 46px; color: #141414; }
+        }
+
+        .timer_block {
+            .title { padding-bottom: 40px; }
+            .opening_timetable { max-width: 600px; width: 100%; display: flex; flex-direction: column; gap: 15px;
+                .opening_hours_inner { display: flex; align-items: center; gap: 15px; justify-content: space-between;
+
+                    .days, .timing_hour { font-size: 20px; line-height: 32px; color: #313131; font-weight: 400; }
+
+                    .timetable_divider { color: #000; height: 0.6px; background-color: #000; flex: 1; }
+                }
+            }
+        }
+
+        .text_block {
+            .title { padding-bottom: 25px; }
+            .find_us {
+                .phone_no { display: flex; align-items: center; gap: 10px; color: #313131; font-size: 22px; line-height: 32px; font-weight: 400;
+                    .phone_link { color: #777777; font-size: 22px; font-weight: 400; line-height: 30px; }
+                }
+            }
+        }
+        
+        .divider { height: 360px; width: 1px; background-color: rgba(156, 156, 156, 0.5); }
+    }
+}
+
+.chat_or_feedback {
+    .sec_content_top { text-align: center; max-width: 70%; margin: auto; padding-bottom: 30px;
+        .title { color: #141414; font-size: 35px; line-height: 47px; font-weight: 500; padding-bottom: 20px;}
+    }
+
+    .contact_boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-gap: 30px;
+        .contact_inner { border-radius: 7px; box-shadow: 0px 1px 3px 0.75px rgba(0, 0, 0, 0.10); padding: 50px 110px; text-align: center; background-color: #FEFBF8;
+
+            .box_icon { padding-bottom: 20px; }
+
+            .box_msg { padding-bottom: 20px; margin: auto;
+                .text { font-size: 20px; font-weight: 400; line-height: 24px; }
+            }
+
+            .box_address {
+                .address_link { color: #101010; font-size: 19px; font-weight: 500; line-height: 26px; }
+            }
+        }
+    }
+}
+
+@media @media-query-base {
+    .opening_hour_sec {
+        .image_with_text { flex-direction: column;
+            .timer_block, .text_block { width: 100%; padding-inline: 0px; 
+                .title { font-size: 22px; line-height: 33px; text-align: left; }
+            }
+
+            .timer_block {
+                .title { padding-bottom: 25px; }
+                .opening_timetable {
+                    .opening_hours_inner {
+                        .days, .timing_hour { font-size: 16px; line-height: 24px; }
+                    }
+                }
+            }
+    
+            .text_block {
+                .title { padding-bottom: 15px; }
+                .find_us {
+                    .phone_no { display: flex; align-items: center; gap: 10px; color: #313131; font-size: 20px; line-height: 28px; font-weight: 400;
+                        .phone_link { font-size: 16px; line-height: 24px; }
+                    }
+                }
+            }
+            
+            .divider { display: none; }
+        }
+    }
+
+    .chat_or_feedback {
+        .sec_content_top {
+            .title { font-size: 22px; line-height: 32px; padding-bottom: 10px; }
+        }
+
+        .contact_boxes { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); grid-gap: 20px;
+            .contact_inner {  padding: 20px 20px;
+                
+                .box_icon { padding-bottom: 10px; }
+
+                .box_msg { padding-bottom: 10px;
+                    .text { font-size: 16px; font-weight: 400; line-height: 21px; }
+                }
+
+                .box_address {
+                    .address_link { word-wrap: break-word; font-size: 16px; line-height: 22px; }
+                }
+            }
+        }
+    }
+}
+
+@media @media-query-tablet {
+    .opening_hour_sec {
+        .image_with_text { flex-direction: row;
+            
+        .divider { display: block; }
+        }
+    }
+
+    .chat_or_feedback {
+        .sec_content_top {
+            .title { padding-bottom: 15px; }
+        }
+        .contact_boxes { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 20px;
+
+            .box_icon { padding-bottom: 15px; }
+
+            .box_msg { padding-bottom: 15px; }
+        }
+    }
+}

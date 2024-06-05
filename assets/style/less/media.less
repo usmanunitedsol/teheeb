@@ -1,0 +1,470 @@
+@import "global";
+@import "header.less";
+@import "footer.less";
+
+
+
+
+@media @media-query-base{
+    // banner styling
+ .main_banner {
+      margin-top: 0px;
+      .banner_content {
+         max-width: 500px; margin: auto;
+         border-radius: 10px;
+         box-sizing: border-box;
+         padding-top: 80px;
+
+         h1{color: #FFF; text-align: center; font-family: 'Pacifico',sans-serif; font-size: 22px; line-height: 30px; font-weight: 400;padding-bottom: 0px;}
+         p{color: #FFF; text-align: center; font-size: 17px; font-style: 400; line-height: 28px; font-weight: 400;}
+ 
+         .banner_cta_block{ padding-top: 20px; text-align: center;
+         }
+         .banner_text{display: none;} 
+     }
+ 
+ }
+ 
+ // image card
+ .home_categories {
+     .categories_inner{padding-top: 15px;}
+ }
+ .img_Card{
+          span{color: #000; text-align: center; font-size: 17px; line-height: 25px; padding-top: 20px; letter-spacing: 2px; }
+ 
+ }
+ 
+ // section_cnt
+ .section_cnt{
+     max-width: 100%; width: 100%;  box-sizing: border-box; 
+     &.hero_cnt{padding-inline: 25px; p{display: none;}; .section_cta{padding-top: 10px;};h2{letter-spacing: 2px;}}
+ 
+     .section_cta{padding-top: 30px;}
+      p{ text-align: center; font-size: 18px; line-height: 30px; font-weight: 400;}
+ }
+ 
+ // <!-- classic basic  tradition -->
+ .classic_tradition{background-color: #FDF9F3;
+     .section_cnt{
+  
+      span{font-size: 20px; line-height: 30px;padding-bottom: 20px;display: block;letter-spacing: 2px;}
+    
+  }
+  
+  .tradition_img{width: 100%;}
+ }
+ 
+ 
+    // category slider
+    .category_slider {
+     .banner_heading { position: static;     background-color: #fff;    transform: unset;
+         padding-top: 15px;
+      }
+ 
+     .slider-wrapper {
+         .swiper-container {
+             .swiper-wrapper {
+                 .product_item { 
+                     .card { display: flex; position: relative; padding: 20px;
+                         .card_heading { font-size: 14px; line-height: 22px; }
+                         .card_text { display: none; }
+                         .card_btns {
+                             .card_btn { font-size: 14px; line-height: 18px;}
+                             .card_btn.btn_more { display: none;}
+                         }
+                     }
+                 }
+             }
+ 
+             .owl_nav_wrapper{ max-width: 100px;
+                 .swiper-scrollbar { display: none;
+                 }
+             }
+         }
+     }
+ }
+ 
+ // product card design 
+ .product_Card{
+     .img_block{
+        .whishlist_icon{ img{width: 20px;}}
+        .show_icon{img{width: 20px;}}
+        span{font-size: 18px; color: #42683F; position: absolute; top: 0; left: 0; padding: 20px;}
+      
+     }
+     border:  1.5px solid #a2630191;
+     
+     &:hover{
+       
+         .img_block{
+              .img_cnt{display: none;
+              }
+           }
+           .cnt_block{
+               .product_title{display: block;}
+               .weight{display: flex;}
+             
+           }
+      }
+    
+     .product_title{font-size: 16px;line-height: 24px;color: #313131; margin-bottom: 10px; display: block;font-weight: 700;display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;}
+     .cnt_block{padding-block: 15px; text-align: center;
+        .weight{padding-bottom: 15px; display: flex;justify-content: center; gap: 10px;
+            .swatch-option{min-width: 6em; 
+                font-size: 14px;
+                line-height: 17px;
+                padding: 5px 15px;
+              
+ 
+            }
+ 
+        }
+      
+         p{font-size: 15px; line-height: 22px;}
+         .product_cta{padding-top: 15px;transition: all 600ms ease;
+             .primary_cta{min-width: 10em; padding: 10px 15px;}
+             &.hide{
+                transition: all 600ms ease;
+                .add_to_basket{display: none;}
+                .quantity{display: inline-block;padding: 0px;}
+             }
+             .quantity{display: none;}
+        }
+    }
+ }
+ 
+ // quantity button design
+ .quantity {
+ 
+     border: 1px solid #A26301; overflow: hidden; padding: 0px;
+     &.primary_cta{padding: 0px;}
+ 
+     &:hover{background-color: transparent;}
+   
+     button {
+         background-color: transparent;
+         color: #454545;
+         border: none;
+         cursor: pointer;
+         font-size: 18px;
+         width: 30px;
+         height: auto;
+         text-align: center;
+         transition: background-color 0.2s;
+        
+ 
+        
+       }
+ 
+       .input-box {
+        
+       
+         padding: 10px 15px;
+         font-size: 16px;
+         line-height: 17px;
+         outline: none;
+       
+       }
+ 
+ 
+   }
+
+   .product_category {
+    .list_block { justify-content: flex-start;  .nav_item { &:first-child{padding-left: 0px;}}}
+    }
+
+    .extra_product {
+        padding: 18px 15px;
+    }
+
+    .extra_product {
+        .card_outer{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        .secondary_title {
+            font-weight: 700;
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 26px;
+            color: #313131;
+        }
+    }
+
+  .bdcrum {
+  .bdcrum_list {
+    .bdcrum_item {
+      &:after {    margin: 0px 10px 0px;}
+      &:last-child{  display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;}
+    }
+    }}
+
+    .dilog_product_blog {
+        .close_dilog {    padding: 20px 20px 10px;}
+        .dialog_inner {
+            padding: 30px 5%;
+        }
+    }
+
+    .iconic_cake_block {
+        background-position: center center;
+       background-size: 100% 100%;
+       height: 300px;
+    }
+
+    .ctg_bd {
+        margin-top: 90px;
+    }
+    
+// Ahmad code
+    .image_with_text { flex-direction: column-reverse;
+        .text_block {text-align: center;
+            .title { text-align: center; font-size: 22px; line-height: 30px; padding-bottom: 15px; }
+            p { padding-bottom: 10px;}
+            .cta_block { padding-top: 10px;}
+
+            .shop_timing {
+                .time { justify-content: center; font-size: 16px; line-height: 22px; padding-bottom: 15px; }
+            }
+
+            .store_address {  padding-bottom: 15px;
+                .address { font-size: 16px; line-height: 22px;}
+            }
+
+            
+            .location_details { font-size: 16px; line-height: 24px;}
+        }
+        .common_block { width: 100%;}
+      }
+ 
+ }
+ 
+ @media @media-query-tablet{
+    // banner styling
+    .main_banner {
+    .banner_content {  .banner_text{display: block;} }
+    }
+
+    // section_cnt
+    .section_cnt { max-width: 100%; width: 90%;   &.hero_cnt{padding-inline: 25px; p{display: block;}; .section_cta{padding-top: 30px;}} }
+ 
+    // category slider
+    .category_slider {
+     .banner_heading { position: absolute; top: 45px;    transform: translateX(-50%); }
+    }
+
+    
+// Ahmad code
+    .image_with_text { flex-direction: row;
+        .common_block { flex: 1}
+        .text_block { text-align: left;
+            .title { text-align: left; padding-bottom: 25px;}
+            p { padding-bottom: 15px;}
+            .cta_block { padding-top: 15px;}
+
+            
+            .shop_timing {
+                .time { font-size: 14px; line-height: 20px; margin: 0; justify-content: flex-start; }
+            }
+
+            .store_address { 
+                .address { font-size: 14px; line-height: 20px; }
+            }
+
+            .location_details { font-size: 14px; line-height: 20px; }
+        }
+      }
+}
+ 
+ @media @media-query-mediumDesktop {
+     // banner styling
+    .main_banner {
+        
+    .banner_inner{padding-top: 100px;}
+        .banner_content {
+            max-width: 500px;
+            border-radius: 10px;
+            
+            box-sizing: border-box;
+            h1{color: #FFF; text-align: center; font-family: 'Pacifico',sans-serif; font-size: 36px; line-height: 46px; font-weight: 400;padding-bottom: 24px;}
+            p{color: #FFF; text-align: center; font-size: 20px; font-style: 400; line-height: 28px; font-weight: 400;}
+    
+            .banner_cta_block{ padding-top: 25px; text-align: center;
+                
+            } 
+        }
+    
+    }
+ 
+    // section_cnt
+    .section_cnt{
+        .section_cta{padding-top: 50px;}
+        p{ text-align: center; font-size: 20px; line-height: 30px; font-weight: 400;color: #6C6C6C;}
+    }
+    
+    // image card
+    .img_Card{
+        span{color: #000; text-align: center; font-size: 26px; line-height: 34px; }
+    }
+ 
+ 
+    // <!-- classic basic  tradition -->
+    .classic_tradition{
+        .section_cnt{
+    
+        span{color: rgba(61, 61, 61, 1);font-size: 24px; line-height: 32px;padding-bottom: 20px;display: block;}
+        .address{color: #1B1B1B;padding-bottom: 0px; padding-top: 20px; font-weight: 500;}
+    }
+    
+    .tradition_img{width: 100%;}
+    }
+ 
+     // category slider
+    .category_slider{
+        .slider-wrapper {
+            .swiper-container {
+                .swiper-wrapper {
+                    .product_item { 
+                        .card { padding: 25px 15px;
+                            .card_heading { font-size: 22px; line-height: 30px; -webkit-line-clamp: 2 }
+                            .card_text { font-size: 18px; line-height: 24px; -webkit-line-clamp: 2 }
+                            .card_btns {
+                                .card_btn { font-size: 14px; line-height: 24px; padding: 7px 5px; }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+ // product card design 
+    .product_Card{
+        .img_block{
+        
+            span{font-size: 18px;}
+            .img_cnt{ padding: 16px 20px; 
+        
+            }
+        }
+    
+        .product_title{font-size: 22px;line-height: 32px;color: #313131; margin-bottom: 15px; }
+        .cnt_block{padding-block: 15px; text-align: center; padding-inline: 15px;
+            .weight{padding-bottom: 15px; display: none;
+            
+            }
+        
+            p{font-size: 18px; line-height: 30px; color:#313131;font-weight: 500;}
+            .product_cta{padding-top: 15px;transition: all 600ms ease;
+                .primary_cta{min-width: 11em; text-transform: uppercase;font-weight: 500;}
+                &.hide{
+                    transition: all 600ms ease;
+                    .add_to_basket{display: none;}
+                    .quantity{display: inline-block;}
+                }
+                .quantity{display: none;}
+            }
+        }
+    }
+
+    .product_category {
+        .list_block { justify-content: flex-start;
+            .nav_item { &:first-child{padding-left: 0px;}}
+        }
+    
+    }
+
+    .dilog_product_blog {
+     .dialog_inner {
+        padding: 50px 5%;
+    }
+
+
+    .extra_product {
+        padding: 25px 20px;
+        .card_outer{
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        }
+    }
+    }
+
+    .ctg_bd {
+        margin-top: 130px;
+    }
+
+// Ahmad code
+    .image_with_text {
+        .common_block { width: 100%}
+        .text_block {
+            .title { font-size: 28px; line-height: 38px; }
+            p { font-size: 16px; line-height: 26px; margin-bottom: 10px; }
+
+            .shop_timing {
+                .time { padding-bottom: 15px; font-size: 16px; line-height: 22px; margin: 0; }
+            }
+
+            .store_address { padding-bottom: 15px;
+                .address { font-size: 16px; line-height: 22px; margin-bottom: 2px; }
+            }
+
+            
+            .location_details { padding-bottom: 15px; margin-bottom: 0; }
+        }
+      }
+}
+ 
+ @media screen and (min-width: 1280px) and (max-width: 1480px) {
+     .section_cnt{
+         max-width: 1000px; width: 100%; margin: auto;}
+
+         .ctg_bd {
+            margin-top: 170px;
+        }
+        
+ }
+ 
+ @media screen and (max-width: 520px) {
+     .category_slider {
+         .banner_heading { top: 15px; } 
+     }
+ }
+ 
+ @media screen and (min-width: 1025px) {
+     .category_slider {
+         .slider-wrapper {
+             .swiper-container {
+                 .swiper-wrapper {
+                     .product_item {     
+                         &:hover .card {
+                             display: flex;
+                         }
+                     }      
+                 }
+             }
+         }
+           
+     }
+ }
+
+//  Ahmad code
+ @media screen and (min-width: 200px) and (max-width: 768px) {
+    .main_banner {
+        .banner_inner {
+            .banner_block {
+                .banner_content{
+                    .banner_heading {
+                        h3 { text-align: center;}
+                    }
+                    .banner_text {
+                        p { text-align: center;}
+                    }
+                }
+            }
+        } 
+    }
+ }

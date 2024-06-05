@@ -1,0 +1,107 @@
+.block-minicart .dialog_top_cnt .primary_title {
+  font-size: 36px;
+  line-height: 46px;
+  color: #2C2C2C;
+  text-align: left;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.block-minicart .product {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.block-minicart .product .product-item-name h3 {
+  font-size: 24px;
+  line-height: 38px;
+  color: #313131;
+  padding-bottom: 25px;
+}
+.block-minicart .product .product-item-details {
+  flex: 1;
+}
+.block-minicart .product .product-item-details .details-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.block-minicart .product .product-item-details .price_remove {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-minicart .product .product-item-details .price_remove .product-item-pricing {
+  flex: 1;
+}
+.block-minicart .product .product-item-details .price_remove .product-item-pricing .price {
+  font-weight: 600;
+  color: #121212;
+}
+.block-minicart .product .product-item-details .price_remove .secondary {
+  flex: 1;
+  text-align: center;
+}
+.block-minicart .product .product-item-details .price_remove .secondary a span {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #131313;
+}
+.block-minicart .faq_acc.mini_cart_acc .faq_acc_li .accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px;
+  border: 0px;
+  border-block: 1px solid #d4d4d4;
+  background-color: #fff;
+  padding-left: 0px;
+  cursor: pointer;
+}
+.block-minicart .faq_acc.mini_cart_acc .faq_acc_li .accordion.active {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+.block-minicart .faq_acc.mini_cart_acc .faq_acc_li:last-child .accordion {
+  border: 0px;
+}
+.block-minicart .faq_acc.mini_cart_acc .faq_acc_li.active-li .panel {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 10px;
+}
+.block-minicart .faq_acc.mini_cart_acc .faq_acc_li .panel {
+  display: none;
+}
+.block-minicart .note .primary_text {
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.block-minicart .note .checkbox_note {
+  padding-bottom: 35px;
+}
+.block-minicart .note .checkbox_note input {
+  width: 20px;
+}
+.block-minicart .note .checkbox_note label {
+  color: #3C3C3C;
+  font-weight: 400;
+}
+.block-minicart .note .checkbox_note label a {
+  color: #1B1B1B;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.block-minicart .actions button {
+  width: 100%;
+  color: #fff;
+  background: #CC8209;
+  margin-bottom: 20px;
+}
+.block-minicart .actions a {
+  display: block;
+  text-align: center;
+}

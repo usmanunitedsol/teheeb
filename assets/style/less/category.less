@@ -1,0 +1,20 @@
+@import (reference) 'global.less';
+
+@media @media-query-base{
+    .product_block{
+         
+        &.grid_3{
+             grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        }
+    }
+    
+}
+
+
+@media @media-query-tablet{
+    .product_block{
+        &.grid_3{
+             grid-template-columns: repeat(3,minmax(0px,1fr));
+        }
+    } 
+}
