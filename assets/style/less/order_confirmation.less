@@ -1,0 +1,241 @@
+@import (reference) 'global.less';
+
+
+.order_details{
+    .order_confirmation {
+        margin-bottom: 60px;
+    
+        .confirmation_message { text-align: center; font-size: 20px; line-height: 30px;color: #313131; font-weight: 400;}
+        .shipping_process { box-sizing: border-box; display: flex; justify-content: center; align-items: center; padding-top: 55px;
+        .badge { box-sizing: border-box; display: flex; justify-content: center; align-items: center; width: 220px; position: relative;
+        .badge_details { padding-top: 0px; color: #414141; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-direction: column;
+        .badge_icon { width: 50px; height: 50px; background-color: #D3D3D3; border-radius: 25px; outline: auto; outline-offset: 8px; outline-color: #D3D3D3; text-align: center; 
+         &.active { background-color: #303030; outline-color: #303030; } 
+        svg { padding-block: 13px; }
+        }
+        .badge_title { font-weight: 400; padding: 0; color: #000000; text-transform: capitalize; text-align: center; 
+         &:nth-child(2){ min-height: 55px;}
+         &.active { font-weight: 600; color: #353535; }
+        }
+        }
+         &:after { content: ""; background-color: #d3d3d3; color: #D1D1D1; height: 4px; width: calc(100% - 80px); top: 25px; left: 68%; position: absolute; }
+         &:first-child{&:before { display: none; }}
+         &:nth-child(3){&:after { display: none; }}
+        
+        }
+        }
+       .order_date, .delivery_date { color: #727272; }
+       .block_cta { text-align: center; margin-top: 45px;
+       .primary_cta{background-color: #CC8209; border: 1px solid #CC8209; color: #fff; min-width: 14em; text-transform: uppercase; &:hover{background-color: transparent; color: #CC8209;}}
+    }
+       .delivery_text { text-align: center; font-size: 20px; line-height: 33px; color: #313131; font-weight: 400;     width: 60%;
+        margin-inline:  auto; margin-top: 45px;
+    }
+        
+    }
+
+    .payment_details { padding: 70px; box-sizing: border-box; background-color: #FEFBF8; 
+    .order_table { width: 100%;
+     .header_row { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; border-bottom: 1px solid rgba(156, 156, 156, 0.5);    margin-bottom: 30px;}
+     .prod_info_col {
+          display: flex;  align-items: flex-start; flex: 1; padding-left: 0px; padding-bottom: 50px;gap: 60px;
+          .prod_info_img_title{display: flex;  align-items: flex-start; justify-content: space-between; width: 100%;
+            padding-block: 20px;}
+        .pd_image_block { img { width: auto; } }
+        .pd_title { font-size: 28px; font-weight: 500; line-height: 40px; color: #000000; padding-bottom: 15px; }
+        .pd_variant { font-size: 22px; font-weight: 400; line-height: normal;
+        .variant_label { color: #535353;font-size: 22px; line-height: 30px; padding-bottom: 15px; display: inline-block; }
+        .varant_option { color: #848484;font-size: 22px; line-height: 30px;  display: inline-block; }
+        }
+    }
+     .heading { font-size: 31px; line-height: 48px; font-weight: 500;} 
+    .order_no { color: #868686; font-size: 24px; font-weight: 400;    padding-bottom: 37px;    }
+    .pd_price { font-size: 26px; line-height: 34px; font-weight: 500; color: #1B1B1B; }
+    }
+    .methods { display: flex; border: 1px solid rgba(156, 156, 156, 0.5); padding: 30px;
+     .cod{font-size: 24px; line-height: 36px; color: #454545;}   
+    .method_title { padding-bottom: 10px; font-size: 31px; line-height: 46px; color: #000000; padding-bottom: 10px; font-weight: 500;}
+    .payment_method, .shipping_method{   flex: 1;}
+    .seprator { display: inline-flex; padding-right: 80px; justify-content: center; 
+     span { width: 1px; height: 200px; background-color:rgba(156, 156, 156, 0.5); }
+    
+    }
+    .totals { padding-top: 20px; span{font-size: 22px; line-height: 30px; color: #313131;} }
+    }
+    }
+  
+}
+
+
+
+
+
+.order_details {
+    .payment_details {
+        .methods {
+            .totals {
+                .total_price,.shipping ,.subtotal {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    box-sizing: border-box;
+                }
+
+                .total_price {
+                    padding-bottom: 0; color: #313131; font-weight: 500;
+                    span {
+                        flex: 1;
+                    }
+                }
+                .shipping {
+                    span{   flex: 1;}
+                }
+
+                .subtotal {
+                    span{flex: 1;}
+                }
+                
+            }
+            .shipping_method{
+                .shipping_address {
+                    max-width: 50%
+                }
+            }
+          
+        }
+
+        .reciept_buttons {
+        display: flex; justify-content: center; gap: 20px; position: relative; margin-top: 28px; text-align: center;
+           .download_btn{ color: #CC8209; border-color:  #CC8209;&:hover{color: #fff;}     padding: 6px 15px;}
+          .print_btn { min-width: 7em;  color: #CC8209; border-color: #CC8209; &:hover{color: #fff;}     padding: 6px 15px;}
+        }
+    }
+}
+
+
+
+
+
+@media @media-query-base{
+    .order_details {
+        .order_confirmation {margin-top: 15px;
+            .confirmation_message {margin-top: 15px; font-size: 18px; line-height: 26px;}
+            .shipping_process {flex-wrap: wrap; padding-top: 40px; gap: 20px;
+                .badge{
+                    &:after{display: none;}
+                }
+            }
+            .delivery_text {
+                margin-top: 25px;    font-size: 18px; line-height: 28px; width: 100%;
+            }
+        }
+
+        .payment_details {
+            padding: 20px 0px;
+
+            .order_table {
+                .heading {
+                    font-size: 23px;
+                    line-height: 36px;
+                    font-weight: 500;
+                }
+                .prod_info_col {flex-wrap: wrap;    padding-bottom: 10px;   gap: 20px;
+                
+                    .pd_title {font-size: 20px; line-height: 30px;}
+                    .pd_price {font-size: 20px; line-height: 30px;}
+                    .pd_variant {
+                        .variant_label {font-size: 17px; line-height: 28px; padding-bottom: 10px;}
+                        .varant_option {font-size: 17px; line-height: 28px;}
+                    }
+                }
+                .order_no {
+                    color: #868686;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding-bottom: 25px;
+                }
+                
+                
+            }
+            .methods {flex-direction: column;        gap: 20px;
+      
+                   
+                
+            .seprator{display: none;}
+            .method_title {
+                font-size: 20px; line-height: 30px;
+            }
+            .cod {
+                font-size: 18px;
+                line-height: 28px;
+                color: #454545;
+                &.shipping_address  {
+                    max-width: 100%;
+                }  
+            } 
+            
+            .totals {
+                span {
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: #313131;
+                }
+            }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+ .order_details { .order_confirmation{ .shipping_process {flex-wrap: nowrap;gap: 15px;} } }
+}
+
+
+@media @media-query-tablet{
+    .order_details {
+        .order_confirmation {
+            .confirmation_message {margin-top: 15px; font-size: 18px; line-height: 26px;}
+            .shipping_process {flex-wrap: nowrap; padding-top: 20px; gap: 20px;
+                .badge{
+                    &:after{display: flex;}
+                }
+            }
+       
+        }
+
+        .payment_details {
+            padding: 20px;
+            .order_table {
+               
+                .prod_info_col {flex-wrap: nowrap;    padding-bottom: 10px;   gap: 20px;
+                
+                   
+                }
+           
+                
+                
+            }
+            .methods {flex-direction: row;        gap: 0px;
+            .seprator{display: inline-flex;    padding-right: 20px;}
+            .method_title {
+                font-size: 20px; line-height: 30px;
+            }
+            .cod {
+                font-size: 18px;
+                line-height: 28px;
+                color: #454545;
+            } 
+            
+            .totals {
+                span {
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: #313131;
+                }
+            }
+            }
+        }
+    }
+}
+

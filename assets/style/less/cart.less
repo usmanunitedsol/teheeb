@@ -1,0 +1,134 @@
+@import (reference) 'global.less';
+.cart_table {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%;
+     .header_row {
+         .flex(space-between,center,0px); border-bottom: 1px dotted #b0b0b0; padding-bottom: 20px; box-sizing: border-box;
+         .heading { font-size: 24px;  line-height: 34px; color: #000;font-weight: 500; }
+    }
+     tr{ &:last-child{ .prod_info_col { border-bottom: none; }} }
+}
+
+.prod_info_col { 
+  padding: 10px 0;
+       .pd_col_info{padding-block: 60px;}
+
+      .flex(space-between,flex-start,10px);  box-sizing: border-box; border-bottom: 1px dotted #b0b0b0;
+      .product_img, img { max-width: 100%; }
+      .pd_title { font-size: 20px; line-height: 30px; color: #000;  font-weight: 600;}
+      .pd_variant { font-size: 18px; line-height: 26px; color: #535353; padding-top: 8px; box-sizing: border-box; }
+      .pd_settings_btn { padding-top: 40px; .flex(normal,center,10px);
+        a { text-decoration: underline; font-size: 18px; font-weight: 500; color: #757575;; line-height: 28px; } }
+     .separator { height: 20px; width: 1.5px; margin-top: -5px; background: #757575; }
+     .pd_price { font-size: 19px; line-height: 30px; font-weight: 400;color: #000;padding-block: 60px; }
+     .quantity {margin-block: 60px;
+      &.primary_cta{font-size: 16px;
+        line-height: 23px;    min-width: 9em;
+      }
+       button {font-size: 18px;}
+       .input-box{        padding: 6px 8px;      font-size: 16px; line-height: 19px;}
+     }
+  
+     }
+
+     
+
+
+ @media @media-query-base{
+   .cart_page { .table_block { max-width: 100%; } }
+  .cart_table {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%;
+     .header_row {
+      padding-bottom: 15px;
+         .heading { font-size: 20px;  line-height: 30px; color: #000;font-weight: 500; }
+    }
+  
+}
+
+.prod_info_col { 
+       flex-direction: column; gap: 20px; text-align: center;    padding: 20px 0; align-items: center;
+    
+       .pd_col_info{padding-block: 0px;}
+       .quantity {margin-block: 0px;}
+     
+
+      .pd_title { font-size: 16px; line-height: 24px; }
+      .pd_variant { font-size: 14px; line-height: 22px; }
+      .pd_settings_btn { padding-block: 0px; padding-top: 20px; .flex(normal,center,10px); 
+        a { text-decoration: underline; font-size: 16px; line-height: 24px;} }
+     .separator { height: 20px; width: 1px; }
+     .pd_price { font-size: 16px; line-height: 24px;padding-block: 0px; }
+     }
+       
+     }     
+
+@media @media-query-tablet{
+     
+
+    .prod_info_col { 
+           flex-direction: row; align-items: flex-start; gap: 10px;
+            .quantity {margin-block: 20px;
+              &.primary_cta{min-width: 9em;}
+            }
+
+            padding: 10px 0;
+            .pd_col_info{padding-block: 20px;}
+
+            .pd_variant { text-align: left;}
+          
+         
+          .pd_settings_btn { padding-top: 50px; .flex(normal,center,5px);
+            a { text-decoration: underline; font-size: 16px; line-height: 24px;} }
+        .separator { height: 20px; width: 1px; }
+        .pd_price { font-size: 16px; line-height: 24px;padding-block: 20px; }
+        }
+     }
+
+@media @media-query-mediumDesktop{
+          .cart_table {
+            padding: 30px 15px;
+          
+            .header_row {
+                
+                .heading { font-size: 20px;  line-height: 30px;  }
+            }
+         
+        }
+
+        .prod_info_col { 
+                padding: 20px 0; 
+             
+              .pd_title { font-size: 18px; line-height: 28px;}
+              .pd_variant { font-size: 16px; line-height: 24px; }
+              .pd_settings_btn { padding-top: 25px; .flex(normal,center,10px);
+                a { text-decoration: underline; font-size: 13px; font-weight: 500; color: #757575;; line-height: 24px;} }
+            .separator { height: 20px; width: 1px; margin-top: -5px; background: #757575; }
+            .pd_price { font-size: 16px; line-height: 24px;  }
+            .quantity {
+              .primary_cta{
+                .input-box{padding: 9px 10px;font-size: 16px;}
+              }
+            }
+            }
+     }
+     
+     
+     @media screen and (min-width: 1280px) and (max-width: 1480px) {
+    
+
+    .prod_info_col { 
+      padding: 10px 0;
+         .pd_col_info{padding-block: 60px;}
+         .quantity {margin-block: 60px;}
+         .pd_price{padding-block: 60px;}
+          .pd_settings_btn { padding-top: 30px; .flex(normal,center,10px);
+            a { text-decoration: underline; font-size: 14px; font-weight: 500; color: #757575;; line-height: 24px; } }
+      
+  
+        }
+     }    
+     
+     

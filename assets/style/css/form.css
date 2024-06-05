@@ -1,0 +1,135 @@
+.reg_header {
+  padding: 20px 35px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.reg_header .primary_link {
+  color: #3F4B5D;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: 500;
+}
+.form_bg {
+  background-color: #FEFBF8;
+  min-height: 100vh;
+}
+.acc_form_blocks {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.acc_form_blocks .acc_form_inner {
+  max-width: 650px;
+  margin: auto;
+}
+.acc_form_blocks .acc_form_inner.small_width {
+  max-width: 500px;
+}
+.acc_form_blocks .acc_form_inner .form_tag_text {
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C809E;
+  padding-top: 20px;
+}
+.acc_form_blocks .acc_form_inner .reset_form .form_title {
+  padding-bottom: 15px;
+}
+.acc_form_blocks .acc_form_inner .reset_form .reset_Text {
+  padding-bottom: 15px;
+}
+.acc_form_blocks .form_title {
+  font-size: 34px;
+  line-height: 42px;
+  color: #2C2C2C;
+  font-weight: 400;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+.acc_form_blocks form {
+  gap: 15px;
+}
+.acc_form_blocks form .fieldset .field {
+  background-color: #FFFFFF;
+  font-size: 17px;
+  line-height: 28px;
+}
+.acc_form_blocks form .fieldset.half {
+  width: calc(50% - 8px);
+}
+.acc_form_blocks form .check_btn_outer .form_check_label {
+  font-size: 17px;
+  line-height: 28px;
+  color: #3F4B5D;
+  font-weight: 400;
+}
+.acc_form_blocks form .check_btn_outer input[type="checkbox"] + label::before {
+  min-width: 25px;
+  border-color: #AAA9A9;
+  color: #AAA9A9;
+  background-color: #FFFFFF;
+}
+.acc_form_blocks form .form_cta {
+  background-color: #CE8B1C;
+  border-color: #CE8B1C;
+  text-transform: uppercase;
+  color: #fff;
+}
+.acc_form_blocks form .form_cta:hover {
+  background-color: transparent;
+  color: #CE8B1C;
+}
+.acc_form_blocks form .reset_password {
+  padding-bottom: 0px;
+}
+.acc_form_blocks form .reset_password a {
+  font-size: 17px;
+  line-height: 30px;
+  color: #3F4B5D;
+}
+.acc_form_blocks .reset_Text {
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .reg_header {
+    padding: 20px 25px;
+  }
+  .reg_header .primary_link {
+    color: #3F4B5D;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .acc_form_blocks .form_title {
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+  .acc_form_blocks form {
+    gap: 20px;
+  }
+  .acc_form_blocks form .fieldset .field {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .acc_form_blocks form .fieldset.half {
+    width: calc(50% - 10px);
+  }
+  .acc_form_blocks form .check_btn_outer .form_check_label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F4B5D;
+    font-weight: 400;
+  }
+  .acc_form_blocks form .reset_password a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F4B5D;
+  }
+}

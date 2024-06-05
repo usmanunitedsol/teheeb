@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/style/css/product-detail-page.css">
+    <link rel="stylesheet" href="../assets/style/css/style.css">
+    <link rel="stylesheet" href="../assets/style/css/media.css">
+    <link rel="stylesheet" href="../assets/fonts/font_face.css">
+    <link rel="stylesheet" href="../assets/style/css/pushbar.css">
+    <script src="../assets/js/pushbar.js"></script>
+
+    <title>Tezheeb - Product Detail</title>
+  </head>
+
+  <body>
+    <div class="page-wrapper delivery_bar">
+        <!-- Header -->
+        <header class="page-header ">
+            <div class="delivery_txt">
+                <p>
+                    <span>Delivering Nationwide. Place your order Online or Call UAN</span> <a href="tel:+123 4587 7854">+123
+                        4587 7854</a>
+                </p>
+            </div>  
+            <div class="bg_header">   
+                         
+               <div class="header_container"> 
+                 
+                    <div class="nav-section">
+                        <div class="nav-section-left">
+                            <div class="nav-section-filter">
+                                <div class="nav-section-item">
+                                    <a href="#!" data-pushbar-target="left" class="hum_menu"><img src="../assets/images/HamburgerMenu.webp" alt="menu" width="33" height="21" style="height: auto;"></a>
+                                </div>
+                                <div class="nav-section-dropdown">
+                                    <select name="" id="">
+                                        <option value="">How do you want your items?</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <aside data-pushbar-id="left" data-pushbar-direction="left"> 
+                            <div class="navigation">
+                                <div class="close_side_bar" data-pushbar-close>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                    stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                                </div>
+                                <ul class="nav_bar">
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Pizza</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Cakes</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Biscuits</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Pastry</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Bread</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Puffs</a></li>
+                                </ul>
+                                <ul class="nav_bar category">
+                                    <li class="nav_list">  <a href="#!" class="nav_item">What’s new</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Best sellers</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Quick order</a></li>
+                                    <li class="nav_list">  <a href="#!" class="nav_item">Contact</a></li>
+                                </ul>
+                            </div>
+                            </aside>
+                            
+                        
+                                
+                        </div>
+                        <div class="nav-section-logo">
+                            <picture>
+                                <source media="(min-width:1025px)" srcset="../assets/images/Tehzeeb-Logo-PNG1.webp">
+                                <source media="(max-width:1024px)" srcset="../assets/images/Tehzeeb-logo-English(layered)1.webp">
+                                <img src="../assets/images/Tehzeeb-Logo-PNG1.webp" alt="logo" width="181" height="128" style="height: auto;">
+                            </picture>
+                        </div>
+                        <div class="nav-section-right">
+
+                            <div class="nav-section-ctas">
+                                <div class="call_cta">                                  
+                                    <a href="tel:+123 4587 7854" >  <img src="../assets/images/fluent_call-28-regular.webp" width="32" height="32" style="height: auto;" alt="call"><span>Call Us</span> </a>
+                                    </div>
+                                <div class="search_field">
+                                    <input type="search" placeholder="Search Tehzeeb" name="Search Tehzeeb" id="search-input">
+
+                                    <label for="search">  <img src="../assets/images/searchicon.webp" alt="search" class="search_icon" id="search-icon" width="23" height="23" style="height: auto;"></label>
+                                
+                                </div>
+                                <div class="profile">
+                                    <a href="#!"><img src="../assets/images/Accont.webp" alt="account" width="25" height="25" style="height: auto;"></a>
+                                </div>
+                                <div class="cart" data-pushbar-target="minicart_sidebar" >
+                                    <a href="#!" ><img src="../assets/images/cart.webp" alt="cart" width="27" height="27" style="height: auto;"></a>
+                                </div>
+                             
+                            </div>
+                            <aside class="right_dialog" data-pushbar-id="minicart_sidebar" data-pushbar-direction="right_dialog">
+                                <div class="dilog_product_blog dilog_pr_size bg_white">
+                                    <div class="close_dilog" data-pushbar-close="">
+                                       <span class="primary_text dialog_close">Close</span>
+                                    </div>
+                                         <div class="dialog_inner">     
+                                                <div class="block block-minicart">
+                                                <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                                                    <div class="dialog_top_cnt">
+                                                            <h2 class="primary_title ">Shopping Cart</h2>
+                                    
+                                                    </div>    
+                                                    <div class="product">
+                                                        <a href="#!"><img src="../assets/images/minicart1.png" alt="mincart"></a>
+                                                        <div class="product-item-details">
+                                                            <div class="product-category">
+                                                                <span class="primary_text">Puff Collection</span>
+                                                            </div>
+                                                            <div class="product-item-name product-item-flavour">
+                                                                <h3>  Chocolate Croissant </h3>
+                                                             </div>
+                                                             <div class="details-qty qty">
+                                                                <span class="primary_text">Quantity</span>
+                                                                <div class="quantity primary_cta">
+                                                                    <button class="minus" aria-label="Decrease">−</button>
+                                                                    <input type="number" class="input-box" value="1" min="1" max="10">
+                                                                    <button class="plus" aria-label="Increase">+</button>
+                                                                  </div>
+                                                             </div>
+                                                             <div class="price_remove">
+                                                                <div class="product-item-pricing">
+                                                                    <div class="price-container">
+                                                                        <span class="minicart-price">
+                                                                            <span class="price primary_text">PKR&nbsp;3,000.00</span>   
+                                                                         </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="secondary">
+                                                                    <a href="#" class="action delete remove" title="Remove item">
+                                                                        <span >Remove</span>
+                                                                    </a>
+                                                                </div>
+                                                             </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <div class="faq_acc mini_cart_acc">
+                                                        <ul class="faq_acc_ul">
+                                                            <li class="faq_acc_li">
+                                                                <button class="accordion ">
+                                                                    <p class="primary_text">Enter Gift Message</p>
+                                                                    <span class="icon secondary_title"></span>
+                                                                </button>
+                                                                <div class="panel">
+                                                                    <p class="primary_text">text here</p>
+                                                            
+                                                                </div>
+                                                            </li>
+                                    
+                                                            <li class="faq_acc_li">
+                                                                <button class="accordion ">
+                                                                    <p class="primary_text">Redeem Points</p>
+                                                                    <span class="icon secondary_title"></span>
+                                                                </button>
+                                                                <div class="panel">
+                                                                    <p class="primary_text">text here</p>
+                                                            
+                                                                </div>
+                                                            </li>
+                                                     
+                                                        </ul>
+                                                    
+                                                    </div>
+                                                    <div class="note">
+                                                        <p class="primary_text">
+                                                            After payment has been completed, order cancellation or change is not possible, and returns can only be proceed after receiving the product. Please double-check the purchased products, samples, and gift wrapping options in your shopping cart.
+                                                        </p>
+                                                        <div class="checkbox_note">
+                                                            <div class="check_btn_outer">
+                                                                <input class="field_item half form_check  primary_text"  type="checkbox" id="gift" name="cnt_radio"
+                                                                    placeholder="0501234567">
+                                                                    <label for="gift" class="primary_text black_box" ><span>I have read and agree to the Tehzeeb <a href="#"> Terms of use</a>  and <a href="#!">Privacy Policy</a>.</span></label>
+                                                               </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button href="#!" class="primary_cta">Make Payment  PKR 2,090.0 </button>
+                                                        <a href="#!" class="primary_text">Continue Shopping</a>
+                                                    </div>
+        
+                                                    <div class="extra_product">
+                                                        <h2 class="secondary_title">Discover Our Range of Croissant</h2>
+                                                        <div class="card_outer">
+                                                        <div class="dialog_prod_card">
+                                                           <img class="product_img" src="../assets/images/Mother'sDayrecipes2.png" alt="">
+                                                           <p class="prod_title primary_text">Chocolate Croissant</p>
+                                                           <div class="card_btn cart_btn">
+                                                              <div class="quantity primary_cta">
+                                                                  <button class="minus" aria-label="Decrease" disabled="">−</button>
+                                                                  <input type="number" class="input-box" value="1" min="1" max="10">
+                                                                  <button class="plus" aria-label="Increase">+</button>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                        <div class="dialog_prod_card">
+                                                           <img class="product_img" src="../assets/images/Mother'sDayrecipes2.png" alt="">
+                                                           <p class="prod_title primary_text">Cream Filled Croissant</p>
+                                                           <div class="card_btn cart_btn">
+                                                              <div class="quantity primary_cta">
+                                                                  <button class="minus" aria-label="Decrease" disabled="">−</button>
+                                                                  <input type="number" class="input-box" value="1" min="1" max="10">
+                                                                  <button class="plus" aria-label="Increase">+</button>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                        <div class="dialog_prod_card">
+                                                            <img class="product_img" src="../assets/images/Mother'sDayrecipes2.png" alt="">
+                                                            <p class="prod_title primary_text">Cream Filled Croissant</p>
+                                                            <div class="card_btn cart_btn">
+                                                               <div class="quantity primary_cta">
+                                                                   <button class="minus" aria-label="Decrease" disabled="">−</button>
+                                                                   <input type="number" class="input-box" value="1" min="1" max="10">
+                                                                   <button class="plus" aria-label="Increase">+</button>
+                                                                 </div>
+                                                            </div>
+                                                         </div>
+                                                       </div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                            </aside>
+                            
+                    
+                            
+                            <div class="navigation">
+                            
+                                <ul class="nav_bar">
+                                <li class="nav_list">  <a href="#!" class="nav_item">What’s new</a></li>
+                                <li class="nav_list">  <a href="#!" class="nav_item">Best sellers</a></li>
+                                <li class="nav_list">  <a href="#!" class="nav_item">Quick order</a></li>
+                                <li class="nav_list">  <a href="#!" class="nav_item">Contact</a></li>
+                        
+                                </ul>
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="mobile_dropdown">
+                            <div class="nav-section-dropdown">
+                                <select name="" id="">
+                                <option value="">How do you want your items?</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+              </div>
+            </div>               
+        </header>
+
+        <main class="page-main ctg_bd"> 
+            <div class="product_details ">
+                <div >
+                    <div class="product_category bg_category">
+                       <div class="main_container">
+                        <ul class="list_block">
+                            <li class="list_item"><a class="nav_item primary_text" href="">Cake</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Biscuits</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Pastry</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Bread</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Pizza</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Puff</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Snacks</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Salad</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Breakfast</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Dry Pastry</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Bread</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Donuts</a></li>
+                            <li class="list_item"><a class="nav_item primary_text" href="">Dry Cakes</a></li>
+                        </ul>
+                    </div> 
+                    </div>
+    
+                    <div class="bdcrum bg_white ">
+                        <div class="main_container">
+                            <ul class="bdcrum_list">
+                                <li class="bdcrum_item"><a href="./index.html" class="bdcrum_link home_icon"><img src="../assets/images/mynaui_home.png" alt=""></a></li>
+                                <li class="bdcrum_item"><a href="" class="bdcrum_link">Cake</a></li>
+                                <li class="bdcrum_item"><a href="" class="bdcrum_link">Fresh Cream Cake</a></li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <aside data-pushbar-id="right_dialog" data-pushbar-direction="right_dialog">
+                    <div class="dilog_product_blog dilog_pr_size bg_white">
+                        <div class="close_dilog">
+                         <a href="" class="primary_text">Close</a>
+                        </div>
+                        <div class="dialog_inner">
+                          <div class="dialog_top_cnt">
+                             <h2 class="primary_title ">Raspberry Cream Croissant</h2>
+                             <p class="primary_text ">It has a shelf of 2 to 3 days.It has refrigerator life of 6 to 7 days. Warm it for 15 seconds in a microwave. It has a shelf of 2 to 3 days.It has refrigerator life of 6 to 7 days. Warm it for 15 seconds in a microwave</p>
+                          </div>
+                
+                          <div class="prod_ingradients">
+                                 <div class="ingradient_row">
+                                         <h2 class="name  primary_text col_width">Why other’s love it?</h2>
+                                     <p class="desc primary_text col_width">It has a shelf of 2 to 3 days.It has refrigerator life of 6 to 7 days. Warm it for 15 seconds in a microwave. </p>
+                                 </div>
+                                 <div class="ingradient_row">
+                                     <h2 class="name  primary_text col_width">Ingredients</h2>
+                                     <p class="desc primary_text col_width">Milk, Honey, Almond, Sugar, Flours </p>
+                                 </div>
+                                 <div class="ingradient_row">
+                                 <h2 class="name  primary_text col_width">Dimensions</h2>
+                                 <p class="desc primary_text col_width">Width 7", Height 6", Diameter, 6", 2 pounds </p>
+                             </div>
+                
+                                 <div class="ingradient_row">
+                                     <h2 class="name  primary_text col_width">Aroma</h2>
+                                 <p class="desc primary_text col_width">Almond essence and crushed almonds </p>
+                             </div>
+                
+                
+                                 <div class="ingradient_row">
+                                     <h2 class="name  primary_text col_width">Packing</h2>
+                                 <p class="desc primary_text col_width">Almond essence and crushed almonds</p>
+                             </div>
+                
+                
+                                 <div class="ingradient_row">
+                                     <h2 class="name  primary_text col_width">Storage</h2>
+                                 <p class="desc primary_text col_width">Milk, Honey, Almond, Sugar, Flours</p>
+                             </div>
+                          </div>
+                          <div class="product_overview_bottom">
+                             <div class="bottom_inner">
+                                 <img src="../assets/images/HALAL-Logo1.png" alt="halal">
+                                 <p class="primary_text">This product is halal</p>
+                             </div>
+                             <div class="bottom_inner">
+                                 <img src="../assets/images/1200px-Veg_symbol copy2.png" alt="vegetarians">
+                                 <p class="primary_text">Suitable for vegetarians</p>
+                             </div>
+                             <div class="bottom_inner">
+                                 <img src="../assets/images/overeview_3.png" alt="vegetarians">
+                                 <p class="primary_text">Handmade products</p>
+                             </div>
+                             <div class="bottom_inner">
+                                 <img src="../assets/images/Group(8).png" alt="vegetarians">
+                                 <p class="primary_text">100% Organic products</p>
+                             </div>
+                             <div class="bottom_inner">
+                                 <img src="../assets/images/Isolation_Mode.png" alt="vegetarians">
+                                 <p class="primary_text">Eco-Friendly
+                                     products</p>
+                             </div>
+                         </div>
+                           <div class="order_note">
+                             <p class="note">Circumstances like weather conditions may cause the product to vary from that mentioned</p>
+                           </div>
+                
+                           <div class="extra_product">
+                              <h2 class="secondary_title">Discover Our Range of Croissant</h2>
+                              <div class="card_outer">
+                              <div class="dialog_prod_card">
+                                 <img class="product_img" src="../assets/images/Mother'sDayrecipes2.png" alt="">
+                                 <p class="prod_title primary_text">Chocolate Croissant</p>
+                                 <div class="card_btn cart_btn">
+                                    <div class="quantity primary_cta">
+                                        <button class="minus" aria-label="Decrease">&minus;</button>
+                                        <input type="number" class="input-box" value="1" min="1" max="10">
+                                        <button class="plus" aria-label="Increase">&plus;</button>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class="dialog_prod_card">
+                                 <img class="product_img" src="../assets/images/Mother'sDayrecipes2.png" alt="">
+                                 <p class="prod_title primary_text">Cream Filled Croissant</p>
+                                 <div class="card_btn cart_btn">
+                                    <div class="quantity primary_cta">
+                                        <button class="minus" aria-label="Decrease">&minus;</button>
+                                        <input type="number" class="input-box" value="1" min="1" max="10">
+                                        <button class="plus" aria-label="Increase">&plus;</button>
+                                      </div>
+                                 </div>
+                              </div>
+                             </div>
+                           </div>
+                        </div>
+                    </div>
+                    
+                </aside>
+                <div class="section_padding bottom_zero ">
+                    <div class=" main_container product_container ">
+                        <div class=" detail_section ">
+                            <div class="product_col">
+                                 <div class="fav_outer">
+                                    <div class="fav_icon active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
+                                            <path d="M25.7521 1.5625C20.4266 1.5625 17.8016 6.8125 17.8016 6.8125C17.8016 6.8125 15.1766 1.5625 9.85115 1.5625C5.52318 1.5625 2.09592 5.18336 2.05162 9.50394C1.96139 18.4724 9.16619 24.8504 17.0633 30.2103C17.2811 30.3584 17.5383 30.4376 17.8016 30.4376C18.0649 30.4376 18.3222 30.3584 18.5399 30.2103C26.4362 24.8504 33.641 18.4724 33.5516 9.50394C33.5073 5.18336 30.0801 1.5625 25.7521 1.5625Z" stroke="#7B7B7B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                 </div>
+                                <div class="product_gallery swiper-container">
+                                    <div class="swiper-wrapper ">
+                                        <div class="product_item swiper-slide">
+                                            <img src="../assets/images/image_block.png" alt="" />
+                                        </div>
+                                        <div class="product_item swiper-slide">
+                                            <img src="../assets/images/image_block.png" alt="" />
+                                        </div>
+                                        <div class="product_item swiper-slide">
+                                            <img src="../assets/images/image_block.png" alt="" />
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="owl_nav_wrapper">
+                                        <!-- pagination -->
+                                        <div class="pagination">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+
+                                        <!-- buttons -->
+                                        <div class="swiper-button-prev"><img src="../assets/images/black_prev_arrow.png" alt="prev"></div>
+                                        <div class="swiper-button-next"><img src="../assets/images/black_next_arrow.png" alt="next"></div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product_col">
+                                <div class="inner-details">
+                                    <p class="primary_text category_title">Puff Collection</p>
+
+                                    <h2 class="primary_title product_title">Raspberry Cream Croissant</h2>
+                                
+                                    <div class="rating">
+                                        <div class="rating_stars">
+                                            <img src="../assets/images/star_1.png" alt="">
+                                            <img src="../assets/images/star_1.png" alt="">
+                                            <img src="../assets/images/star_1.png" alt="">
+                                            <img src="../assets/images/star_1.png" alt="">
+                                            <img src="../assets/images/star_2.png" alt="">
+                                        </div>
+                                        <div class="rating_score"><p class="primary_text">4.5 Rating</p></div>
+                                    </div>
+                                
+                                    <div class="product_description">
+                                        <h2 class="sub_title" >Product Description</h2>
+
+                                        <p class="product_info shrt_desc">
+                                            It has a shelf of 2 to 3 days.It has refrigerator life of 6 to 7
+                                            days. Warm it for 15 seconds in a microwave. It has a shelf of 2
+                                            to 3 days
+                                        </p>
+
+                                        <p class="product_info">
+                                            <strong>Aroma:</strong>Almond essence and crushed almonds
+                                        </p>
+
+                                        <p class="product_info">
+                                            <strong>Serve with:</strong>Almond essence and crushed almonds
+                                        </p>
+
+                                        <p class="product_info">
+                                            <strong>Life:</strong>Almond essence and crushed almonds
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="more_link">
+                                        <a href="#!" class="see_more" data-pushbar-target="right_dialog">See more</a>
+                                    </div>
+
+                                    <div class="product_price">
+                                        <p class="primary_text price">PKR 2,090.0</p>
+                                    </div>
+
+                                    <div class="product_variant">
+                                        <label class="variant_label primary_text">Weight</label>
+                                        <div class="variant_item">
+                                            <input type="radio" name="variant" id="variant_1">
+                                            <label for="variant_1" class="variant">400g</label>
+                                            
+                                            <input type="radio" name="variant" id="variant_2">
+                                            <label for="variant_2" class="variant">600g</label>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="product_cta_quantity">
+                                        <label class="qty_cart_label primary_text">Quantity & Cart</label>
+                                        <div class="product_cta" >
+                                            <a href="#!" class="primary_cta add_to_basket" id="hide_button">Add to basket</a>
+                                            <div id="qty_button" class="primary_cta hidden">
+                                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                                <button class="plus" aria-label="Increase">&plus;</button>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trust_badges">
+                                        <div class="trust_badge active">
+                                            <input type="radio" name="express_delivery" id="express_delivery">
+                                            <label for="express_delivery">
+                                                <svg width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="27" cy="29.251" r="14" fill="#EFEFEF"/>
+                                                    <path d="M16.8253 28.7324C16.8247 28.7813 16.8244 28.8296 16.8244 28.8772C16.8244 28.9248 16.8247 28.9731 16.8253 29.022H15.2703C15.2698 28.9745 15.2695 28.9262 15.2695 28.8772C15.2695 28.8285 15.2698 28.7803 15.2703 28.7324H16.8253Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M21.939 19.979L21.162 18.63C21.184 18.6173 21.2061 18.6046 21.2282 18.592L22.0047 19.941C21.9828 19.9536 21.9608 19.9663 21.939 19.979Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M18.2408 23.7027L18.2032 23.768L16.8383 22.9824C16.8508 22.9606 16.8633 22.9388 16.876 22.917L18.2408 23.7027Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M36.0178 34.058C36.0311 34.0352 36.0443 34.0124 36.0574 33.9896L37.4033 34.7688C37.3907 34.7905 37.3781 34.8121 37.3654 34.8338L36.0178 34.058Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M18.1848 33.9899C18.1977 34.0124 18.2107 34.0349 18.2237 34.0573L16.875 34.8337C16.8621 34.8116 16.8493 34.7896 16.8367 34.7675L18.1848 33.9899Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M21.937 37.7729C21.9595 37.7862 21.9821 37.7993 22.0047 37.8123L21.229 39.1601C21.2064 39.1471 21.1838 39.1339 21.1612 39.1207L21.937 37.7729Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M32.228 19.9547L33.0167 18.5927C33.0377 18.6048 33.0587 18.617 33.0797 18.6293L32.2942 19.9931L32.228 19.9547Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M27.1207 40.7292C27.072 40.7292 27.0239 40.7291 26.9766 40.7286V39.1201H27.2662V40.7286C27.2185 40.7291 27.17 40.7292 27.1207 40.7292Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M27.1207 17.0254C27.1699 17.0254 27.2184 17.0256 27.2662 17.0262V18.6351H26.9766V17.0262C27.024 17.0256 27.0721 17.0254 27.1207 17.0254Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M33.0798 39.1203C33.0582 39.1329 33.0366 39.1455 33.015 39.158L32.227 37.7971L32.2951 37.7572L33.0798 39.1203Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M36.001 23.7017L37.3655 22.9163C37.3786 22.9386 37.3916 22.961 37.4046 22.9834L36.0401 23.7689L36.001 23.7017Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M37.3652 29.022V28.7324H38.9737C38.9742 28.7802 38.9744 28.8284 38.9744 28.8772C38.9744 28.926 38.9742 28.9742 38.9737 29.022H37.3652Z" fill="#EFEFEF" stroke="#656565"/>
+                                                    <path d="M42.5245 15.163C42.5245 15.163 42.4548 16.4968 41.1764 17.0646C39.8981 17.6331 38.6199 16.3548 40.4666 14.9339C42.3128 13.513 42.1708 8.8269 40.4666 7.40605C40.8925 8.54233 39.1161 10.1052 37.981 9.11088C36.8441 7.26414 38.0514 4.21008 39.7561 3.35819C38.4778 2.36268 34.7133 3.49961 34.7133 6.05682C34.7133 8.09092 34.7843 8.89802 33.0796 8.82698C31.2137 8.74823 32.7962 5.55882 33.0796 5.13283C27.5398 5.91425 30.6648 10.8151 28.5341 10.9565C26.4035 11.099 27.6823 8.8269 27.8243 8.54184C24.1195 9.15797 25.0226 11.4742 22.4397 13.4487C15.8197 15.4547 11.0006 21.6017 11 28.8778C11.0006 37.7823 18.2177 44.9988 27.1216 44.9994C36.0262 44.9988 43.2433 37.7823 43.2439 28.8777C43.2439 26.8204 42.8544 24.8555 42.1523 23.0462C42.3277 20.8803 43.1079 19.5532 43.3692 18.4782C43.9544 16.0732 42.5245 15.163 42.5245 15.163ZM27.1216 42.9194C23.2408 42.9188 19.7369 41.3494 17.1929 38.8065C14.65 36.2619 13.0805 32.758 13.08 28.8778C13.0805 24.9963 14.65 21.4925 17.1929 18.9484C19.7369 16.4055 23.2408 14.8361 27.1216 14.8361C31.0025 14.8361 34.5063 16.4055 37.051 18.9484C39.594 21.4925 41.1633 24.9963 41.1639 28.8778C41.1633 32.758 39.5939 36.2619 37.051 38.8065C34.5063 41.3494 31.0025 42.9188 27.1216 42.9194Z" fill="#EFEFEF" stroke="#656565" stroke-width="0.8"/>
+                                                    <path d="M32.9811 22.508L32.9812 22.5081L32.9894 22.499C33.1832 22.2815 33.4011 22.3244 33.4711 22.3862C33.5412 22.449 33.6087 22.6592 33.4156 22.8751L33.4154 22.875L33.4064 22.8857L27.5843 29.774L27.5694 29.7885L27.5589 29.7988L27.549 29.8097C27.309 30.0741 27.0117 30.0955 26.8426 30.0012L26.8427 30.0011L26.8328 29.9959L26.8113 29.9846L26.7827 29.9679L22.0461 26.3135L22.0462 26.3133L22.0363 26.306C21.9151 26.2173 21.8216 25.9442 22.0323 25.657L22.0327 25.6565C22.2439 25.3677 22.5321 25.3768 22.6505 25.4641L22.6504 25.4643L22.6617 25.4722L26.8742 28.4051L27.2293 28.6523L27.5249 28.3364L32.9811 22.508Z" fill="#323232" stroke="#656565"/>
+                                                    </svg>
+                                                    
+                                                <div class="cnt">
+                                                    <p class="text bold">Express Delivery</p>
+                                                    <p class="sub_text">Est Time 45 mins</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="trust_badge ">
+                                            <input type="radio" name="express_delivery" id="same_day_delivery">
+                                            <label for="same_day_delivery">
+                                                <svg width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="19" y="9.26465" width="19" height="20" fill="#EFEFEF"/>
+                                                    <circle cx="38" cy="9.26465" r="5" fill="#EFEFEF"/>
+                                                    <rect x="10" y="30.2646" width="5" height="13" fill="#EFEFEF"/>
+                                                    <path d="M21 31.2646L15.5 32.7646L15 39.7646H20H23.5L26 41.7646L29.5 42.7646L37 40.7646L42.5 39.2646L43 37.7646L42.5 36.2646L41 35.7646L34.5 37.2646L33 38.2646L32 36.2646L29.5 34.7646L26.5 32.7646L21 31.2646Z" fill="#EFEFEF" stroke="#EFEFEF"/>
+                                                    <path d="M32.6296 9.01293C32.7605 7.57653 33.4411 6.24909 34.526 5.3147C35.6108 4.38031 37.0135 3.9132 38.434 4.01333C39.7467 4.11878 40.9758 4.70794 41.8886 5.66936C42.8015 6.63079 43.3349 7.89779 43.3879 9.23071C43.4349 10.6334 42.9527 12.0016 42.0394 13.0569C41.1261 14.1123 39.8503 14.7757 38.4714 14.9121V28.6326C38.4714 29.2954 38.3593 29.409 37.7143 29.409H19.0204C18.3661 29.409 18.2539 29.3049 18.2539 28.6326V9.77991C18.2539 9.09815 18.338 9.01293 19.0204 9.01293H32.6296ZM28.3954 15.3761C28.3328 15.4424 28.2735 15.512 28.2178 15.5844C27.5261 16.5881 26.8344 17.5823 26.1614 18.5955C26.0026 18.8322 25.853 19.0121 25.5445 18.9269C25.2361 18.8417 25.2081 18.586 25.2081 18.3114C25.2081 15.6885 25.2081 13.0562 25.2081 10.4333V9.96929H19.2073V28.4527H37.5274V14.9121C36.3119 14.7908 35.1724 14.2573 34.2936 13.398C33.4148 12.5387 32.8482 11.4039 32.6856 10.1776C32.6655 10.1215 32.6319 10.0713 32.5878 10.0317C32.5438 9.99198 32.4906 9.96404 32.4333 9.95035C32.1248 9.95035 31.8164 9.95035 31.4986 9.95035V18.2167C31.4986 18.4913 31.5547 18.7849 31.2182 18.908C30.8817 19.0311 30.7134 18.7943 30.5452 18.5387C29.8535 17.4971 29.1244 16.446 28.3954 15.3761ZM38.0415 4.96022C37.1597 4.96397 36.2988 5.23254 35.5676 5.73195C34.8365 6.23136 34.268 6.93919 33.9339 7.76593C33.5999 8.59267 33.5154 9.50119 33.691 10.3766C33.8667 11.252 34.2947 12.055 34.9208 12.684C35.5469 13.313 36.3431 13.7398 37.2087 13.9104C38.0743 14.081 38.9704 13.9878 39.7836 13.6425C40.5969 13.2971 41.2908 12.7153 41.7776 11.9705C42.2645 11.2256 42.5223 10.3513 42.5187 9.45796C42.5112 8.26084 42.036 7.11545 41.1969 6.2725C40.3578 5.42954 39.2232 4.95769 38.0415 4.96022ZM26.1708 9.95982V16.9479L27.8906 14.4292C28.2271 13.9462 28.5169 13.9462 28.8253 14.4292L29.76 15.7737L30.5639 16.9574V9.95982H26.1708Z" fill="#656565"/>
+                                                    <path d="M15.3184 32.1842L17.5991 31.3793C18.7089 30.9369 19.8844 30.6872 21.0762 30.6407C22.6692 30.6571 24.2357 31.0563 25.6468 31.8054C27.6471 32.8375 29.6006 33.9738 31.5728 35.0722C31.8906 35.2426 32.1804 35.4415 32.5075 35.6025C32.8258 35.7482 33.1086 35.9627 33.3363 36.231C33.564 36.4993 33.7309 36.8148 33.8254 37.1554L37.2371 36.2085C38.3681 35.9055 39.4991 35.593 40.6394 35.2616C40.9559 35.165 41.2882 35.1335 41.6169 35.1691C41.9456 35.2046 42.2639 35.3064 42.5531 35.4685C42.8424 35.6307 43.0966 35.8498 43.301 36.113C43.5053 36.3762 43.6556 36.6782 43.7429 37.0011C43.8302 37.3241 43.8529 37.6615 43.8095 37.9934C43.7661 38.3254 43.6576 38.6452 43.4903 38.934C43.3231 39.2228 43.1004 39.4748 42.8355 39.6751C42.5706 39.8754 42.2689 40.0199 41.948 40.1002C38.8541 41.0471 35.7509 41.8709 32.6477 42.761C32.0776 42.9314 31.5074 43.1019 30.9466 43.2912C30.3663 43.4868 29.7519 43.5567 29.1432 43.4964C28.5346 43.436 27.9452 43.2468 27.4134 42.9409C26.3946 42.3822 25.3571 41.8425 24.3757 41.2175C23.5064 40.6104 22.4778 40.2806 21.422 40.2706C19.4031 40.2706 17.3841 40.4127 15.3184 40.4979V42.8557C15.3184 43.4711 15.1876 43.6037 14.5707 43.6037H10.7384C10.1402 43.6037 10 43.4617 10 42.8841V30.1294C10 29.5613 10.1309 29.4287 10.6636 29.4287H14.6735C15.1408 29.4287 15.281 29.5802 15.2904 30.0537C15.3278 30.7354 15.3184 31.474 15.3184 32.1842ZM15.3184 39.7025H15.8512C17.4776 39.5984 19.104 39.4563 20.7303 39.409C22.2201 39.3163 23.7002 39.7077 24.9552 40.5263C25.8151 41.1134 26.7685 41.5774 27.6845 42.0982C28.1594 42.3689 28.6852 42.5358 29.2277 42.588C29.7703 42.6402 30.3176 42.5766 30.8344 42.4012C34.4143 41.3312 38.0035 40.318 41.5928 39.2764C41.8131 39.2428 42.024 39.1623 42.2115 39.0403C42.3989 38.9183 42.5588 38.7575 42.6806 38.5684C42.8023 38.3793 42.8832 38.1663 42.9179 37.9433C42.9526 37.7203 42.9404 37.4924 42.882 37.2746C42.8236 37.0567 42.7203 36.8538 42.579 36.6793C42.4377 36.5047 42.2616 36.3624 42.0621 36.2617C41.8627 36.161 41.6445 36.1042 41.4218 36.0951C41.1992 36.0859 40.9771 36.1245 40.7702 36.2085L34.2274 37.9792C34.1181 37.9992 34.0165 38.0497 33.934 38.125C33.8514 38.2003 33.7912 38.2973 33.76 38.4053C33.669 38.6822 33.5209 38.9363 33.3254 39.1507C33.1299 39.365 32.8915 39.5347 32.6262 39.6485C32.3609 39.7623 32.0748 39.8175 31.7868 39.8105C31.4987 39.8035 31.2155 39.7344 30.9559 39.6078C29.4511 38.8124 28.0023 37.9129 26.5255 37.0512C26.4226 36.9897 26.348 36.8893 26.3182 36.7721C26.2884 36.6549 26.3058 36.5305 26.3666 36.4263C26.4273 36.322 26.5264 36.2465 26.6421 36.2163C26.7578 36.1862 26.8806 36.2038 26.9835 36.2653L27.3199 36.4547C28.5662 37.2059 29.8405 37.9508 31.1429 38.6893C31.2791 38.7689 31.4295 38.8205 31.5854 38.8412C31.7414 38.8619 31.8998 38.8513 32.0517 38.81C32.2036 38.7687 32.346 38.6974 32.4707 38.6004C32.5954 38.5033 32.7 38.3823 32.7786 38.2443C32.8571 38.1063 32.9081 37.9539 32.9285 37.7959C32.949 37.638 32.9385 37.4775 32.8977 37.3236C32.8569 37.1697 32.7866 37.0255 32.6908 36.8991C32.595 36.7728 32.4755 36.6668 32.3393 36.5872C31.928 36.341 31.5167 36.0948 31.0961 35.8581C29.0373 34.5738 26.8986 33.4256 24.6934 32.4209C23.0533 31.6353 21.2007 31.4287 19.4311 31.8338C18.1038 32.2031 16.8233 32.6955 15.5241 33.15C15.4212 33.15 15.3278 33.4341 15.3278 33.5856C15.3278 35.1953 15.3278 36.805 15.3278 38.4053L15.3184 39.7025ZM14.3837 42.7136V30.404H10.9347V42.7136H14.3744H14.3837Z" fill="#656565"/>
+                                                    <path d="M38.4985 12.4409C38.4237 13.2647 38.3302 13.4635 37.9844 13.3878C37.3769 13.3026 37.6105 12.7818 37.5264 12.4409C37.3488 12.3651 37.1525 12.3083 36.9656 12.2136C36.697 12.0983 36.4622 11.9149 36.2838 11.6811C36.1054 11.4473 35.9893 11.1709 35.9468 10.8785C35.927 10.8162 35.9211 10.7502 35.9294 10.6853C35.9378 10.6203 35.9601 10.5581 35.995 10.5029C36.0298 10.4477 36.0762 10.401 36.1309 10.3661C36.1855 10.3312 36.2472 10.3089 36.3113 10.3009C36.3735 10.2835 36.4388 10.2808 36.5022 10.293C36.5655 10.3052 36.6253 10.3321 36.6768 10.3714C36.7283 10.4108 36.7702 10.4616 36.7992 10.52C36.8282 10.5784 36.8435 10.6427 36.8441 10.7081C36.9189 11.2668 37.3301 11.4372 37.7788 11.5129C38.015 11.5707 38.2628 11.5576 38.4918 11.4752C38.7209 11.3929 38.9213 11.2447 39.0687 11.049C39.1405 10.9764 39.1912 10.8852 39.2152 10.7853C39.2392 10.6855 39.2356 10.5808 39.2046 10.483C39.1737 10.3851 39.1167 10.2977 39.04 10.2305C38.9632 10.1633 38.8696 10.1189 38.7696 10.1021C38.3022 9.95057 37.8349 9.87482 37.3301 9.74225C37.0448 9.7084 36.7733 9.59856 36.5435 9.42392C36.3136 9.24928 36.1335 9.01606 36.0215 8.74801C35.9489 8.5363 35.921 8.31149 35.9396 8.08815C35.9582 7.86481 36.0229 7.64792 36.1295 7.45153C36.2362 7.25514 36.3823 7.08363 36.5586 6.94811C36.7348 6.81259 36.9371 6.71609 37.1525 6.66485C37.4703 6.56069 37.5918 6.43759 37.5544 6.10618C37.5171 5.77477 37.676 5.51911 38.0311 5.52858C38.0999 5.52734 38.1679 5.54245 38.2298 5.57271C38.2917 5.60296 38.3458 5.64751 38.3876 5.70277C38.4294 5.75803 38.4579 5.82246 38.4706 5.89088C38.4834 5.9593 38.4801 6.0298 38.4611 6.09671C38.4144 6.45653 38.5826 6.57963 38.9004 6.67432C39.2065 6.75435 39.482 6.92504 39.6918 7.16456C39.9016 7.40407 40.0361 7.70153 40.0781 8.01891C40.0781 8.34085 40.0781 8.61545 39.6856 8.66279C39.293 8.71014 39.2089 8.49235 39.1621 8.17041C39.1416 8.0131 39.0767 7.86514 38.9752 7.74431C38.6961 7.53662 38.3588 7.42463 38.0124 7.42463C37.6661 7.42463 37.3288 7.53662 37.0497 7.74431C36.9774 7.81668 36.9244 7.90654 36.8959 8.00539C36.8674 8.10425 36.8642 8.20884 36.8866 8.30929C36.9091 8.40974 36.9564 8.50274 37.0242 8.5795C37.092 8.65627 37.178 8.71426 37.274 8.74801C37.6573 8.89005 38.0685 8.94686 38.4705 9.05102L39.0032 9.19305C39.2866 9.26917 39.5407 9.43006 39.7325 9.65471C39.9243 9.87937 40.0447 10.1574 40.0781 10.4524C40.1174 10.7557 40.0674 11.064 39.9343 11.3385C39.8013 11.6131 39.5912 11.8418 39.3304 11.9959C39.0624 12.1614 38.7846 12.3101 38.4985 12.4409Z" fill="#656565"/>
+                                                    </svg>
+                                                    
+                                                <div class="cnt">
+                                                    <p class="text">Same Day Delivery</p>
+                                                    <p class="sub_text">within 24 Hours</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="trust_badge ">
+                                            <input type="radio" name="express_delivery" id="next_day_delivery">
+                                            <label for="next_day_delivery">
+                                                <svg width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7637 17H39.2637L40.7637 18L34.7637 37H13.2637L11.7637 36.5L16.7637 17Z" fill="#EFEFEF" stroke="#EFEFEF"/>
+                                                    <path d="M51.9991 30.281C51.5169 32.0378 51.0289 33.7946 50.5498 35.5368C50.1505 37.0008 49.2927 37.7152 47.7784 37.9173C47.5941 37.9771 47.441 38.1065 47.3525 38.2774C46.5243 39.718 45.3294 40.6608 43.6583 40.9331C41.6057 41.2698 40.1091 40.1338 39.8961 38.0812C39.8861 38.0216 39.8712 37.9629 39.8518 37.9056H39.3756C34.17 37.9056 28.9615 37.9056 23.753 37.9056C23.6047 37.8893 23.4552 37.9222 23.3278 37.999C23.2005 38.0758 23.1024 38.1923 23.049 38.3301C22.1055 40.1162 20.0233 41.2581 18.2783 40.9653C16.7195 40.7164 15.8056 39.7502 15.6548 38.1837C15.6548 38.1193 15.637 38.0578 15.6222 37.9436C15.4684 37.9436 15.3117 37.9173 15.1579 37.9173C14.3268 37.9173 13.4986 37.9173 12.6675 37.9173C11.6352 37.8968 11.0467 37.1941 11.2981 36.2161C11.7536 34.4242 12.2534 32.641 12.7473 30.8579C12.7645 30.7576 12.8032 30.6621 12.8609 30.5779C12.9186 30.4938 12.9939 30.4229 13.0817 30.3701C13.1695 30.3173 13.2678 30.2839 13.3699 30.272C13.4719 30.2602 13.5753 30.2703 13.6731 30.3015C14.0724 30.4128 14.2646 30.7876 14.1375 31.2678C13.7293 32.8079 13.3093 34.3451 12.8952 35.8823C12.8509 36.0521 12.8095 36.2249 12.7473 36.4679C13.7973 36.4679 14.8177 36.4679 15.8234 36.4503C15.9328 36.4503 16.0541 36.219 16.1369 36.0785C17.104 34.4329 18.4853 33.4169 20.4581 33.3818C22.212 33.3496 23.4158 34.4564 23.5785 36.181C23.5785 36.26 23.5992 36.3391 23.611 36.4445H34.7053L39.7571 17.7872C39.5294 17.7872 39.3608 17.758 39.1922 17.758H35.0514C34.4332 17.758 34.1404 17.5354 34.1227 17.0728C34.1049 16.6102 34.4184 16.3145 35.0366 16.3115C36.5657 16.3115 38.0978 16.3115 39.627 16.3115C40.7598 16.3115 41.1857 16.6951 41.301 17.8663H46.6959C48.1747 17.8663 48.8728 18.5719 48.8757 20.0389C48.8757 22.1324 48.8964 24.2259 48.8757 26.3224C48.8644 26.456 48.8918 26.59 48.9547 26.7087C49.0175 26.8275 49.1133 26.926 49.2306 26.9929C49.7719 27.3501 50.2806 27.7542 50.8248 28.1055C51.3837 28.4184 51.8053 28.9255 52.0079 29.5285L51.9991 30.281ZM50.0647 31.745C49.82 31.7373 49.5761 31.7148 49.3342 31.6777C49.2434 31.6689 49.1554 31.6417 49.0757 31.5979C48.996 31.554 48.9262 31.4944 48.8708 31.4227C48.8153 31.3511 48.7753 31.2689 48.7533 31.1813C48.7312 31.0937 48.7276 31.0025 48.7426 30.9135C48.7438 30.8281 48.7619 30.7438 48.796 30.6654C48.83 30.587 48.8794 30.516 48.9412 30.4564C49.003 30.3969 49.076 30.35 49.1561 30.3184C49.2363 30.2868 49.3219 30.2711 49.4081 30.2723C49.5856 30.2723 49.7689 30.2869 49.9434 30.2723C50.1311 30.2292 50.3159 30.1744 50.4965 30.1083C50.3989 29.8916 50.3605 29.6047 50.2008 29.4729C49.5767 28.981 48.923 28.5272 48.2605 28.0938C48.0342 27.9486 47.7728 27.8657 47.5033 27.8537C45.9565 27.8332 44.4125 27.8537 42.8657 27.8537C41.3188 27.8537 40.4729 26.8114 40.8574 25.3005C41.0437 24.5685 41.2419 23.8365 41.4489 23.1104C41.6115 22.5065 41.9693 21.9718 42.4675 21.588C42.9658 21.2042 43.5772 20.9923 44.2085 20.9846C44.6462 20.9846 45.0958 20.9846 45.5276 20.9846H47.3969C47.3969 20.642 47.3969 20.3697 47.3969 20.1062C47.3969 19.4123 47.32 19.3391 46.6101 19.3362C44.8591 19.2981 43.1111 19.2981 41.3365 19.2981C40.9993 19.2981 40.8308 19.3625 40.745 19.7314C39.8577 23.1074 38.929 26.4658 38.018 29.8448C37.9884 29.9648 37.9677 30.0878 37.9322 30.2664H45.918C46.0796 30.2576 46.2415 30.2576 46.4031 30.2664C46.5686 30.2692 46.7268 30.3344 46.8455 30.4486C46.9642 30.5628 47.0344 30.7176 47.0419 30.8813C47.0769 31.0505 47.0427 31.2266 46.9468 31.371C46.8509 31.5153 46.7011 31.6161 46.5303 31.6513C46.3363 31.6951 46.1374 31.7128 45.9387 31.704C43.2768 31.704 40.6355 31.704 37.9825 31.704C37.6069 31.704 37.4442 31.8095 37.3525 32.1696C37.0301 33.4491 36.6752 34.7199 36.335 35.9965C36.2996 36.1312 36.2759 36.2717 36.2345 36.4621C37.456 36.4621 38.6243 36.4621 39.7837 36.4621C39.9093 36.4739 40.0352 36.4444 40.1421 36.3783C40.2491 36.3121 40.331 36.2129 40.3753 36.0961C40.7152 35.4039 41.2154 34.801 41.8353 34.3364C42.4551 33.8719 43.1771 33.5588 43.9423 33.4228C46.409 32.9689 47.7873 34.594 47.8139 36.181C47.8255 36.2621 47.8464 36.3416 47.876 36.4181C48.1489 36.3877 48.4062 36.2764 48.6141 36.0987C48.8221 35.9211 48.971 35.6854 49.0413 35.4226C49.4081 34.2309 49.7216 33.007 50.0647 31.7392V31.745ZM47.3791 26.3751V22.4135C46.2552 22.4135 45.1697 22.393 44.0872 22.4135C43.8382 22.4143 43.5958 22.4928 43.3946 22.6379C43.1933 22.783 43.0434 22.9873 42.9662 23.2216C42.6704 24.0707 42.4634 24.9462 42.2416 25.8158C42.2154 25.8812 42.2071 25.9522 42.2175 26.0218C42.2278 26.0913 42.2564 26.157 42.3004 26.2122C42.3445 26.2673 42.4024 26.3101 42.4684 26.3361C42.5343 26.3621 42.6061 26.3705 42.6764 26.3604C44.2321 26.3722 45.7879 26.3692 47.3791 26.3692V26.3751ZM20.4581 34.8165C18.9999 34.8165 17.4383 36.0814 17.1543 37.5015C16.9029 38.7664 17.6956 39.6624 18.9615 39.5511C19.6993 39.4584 20.3915 39.1466 20.9469 38.6569C21.5023 38.1672 21.8949 37.5224 22.073 36.8076C22.3185 35.6569 21.6353 34.8165 20.4581 34.8165ZM46.3646 36.4123C46.3834 36.207 46.3582 36.0001 46.2906 35.8051C46.2231 35.6102 46.1147 35.4315 45.9726 35.2809C45.8305 35.1303 45.6578 35.011 45.466 34.931C45.2741 34.851 45.0673 34.812 44.8591 34.8165C43.2531 34.7433 41.5643 36.1605 41.375 37.7445C41.335 37.9641 41.3438 38.1897 41.4009 38.4056C41.458 38.6215 41.562 38.8224 41.7056 38.9944C41.8492 39.1664 42.029 39.3053 42.2324 39.4015C42.4358 39.4976 42.658 39.5487 42.8834 39.5511C44.5042 39.6741 46.3439 38.0373 46.3646 36.4123Z" fill="#666666" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M32.4383 18.5568C32.4424 20.8457 31.761 23.0845 30.4803 24.9902C29.1996 26.8958 27.377 28.3829 25.2428 29.2635C23.1087 30.1441 20.7587 30.3787 18.49 29.9376C16.2212 29.4965 14.1354 28.3996 12.4961 26.7854C10.8569 25.1712 9.73774 23.1122 9.28015 20.8685C8.82256 18.6249 9.04704 16.2973 9.92523 14.18C10.8034 12.0626 12.2959 10.2504 14.2141 8.97247C16.1323 7.69451 18.3901 7.00811 20.7022 7C23.8048 6.99765 26.7819 8.21253 28.9816 10.3786C31.1813 12.5447 32.4243 15.4854 32.4383 18.5568ZM30.9595 18.589C30.9624 16.5847 30.3645 14.6245 29.2415 12.9567C28.1184 11.289 26.5208 9.98857 24.6507 9.2202C22.7807 8.45182 20.7225 8.25002 18.7365 8.64034C16.7506 9.03066 14.9263 9.99556 13.4946 11.4129C12.0629 12.8302 11.0882 14.6361 10.694 16.6021C10.2997 18.5681 10.5035 20.6057 11.2797 22.457C12.0559 24.3082 13.3695 25.8898 15.0541 27.0016C16.7388 28.1134 18.7189 28.7053 20.7436 28.7024C23.454 28.6978 26.0525 27.6316 27.9716 25.7367C29.8907 23.8419 30.9744 21.2723 30.9861 18.589H30.9595Z" fill="#666666" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M6.67611 27.9292C7.90947 27.9292 9.14283 27.9292 10.3762 27.9292C10.9677 27.9292 11.2813 28.1722 11.2901 28.629C11.299 29.0858 10.9766 29.3727 10.3644 29.3756C7.87989 29.3756 5.39542 29.3756 2.91095 29.3756C2.19222 29.3756 1.7604 28.7725 2.14194 28.2923C2.34678 28.079 2.6286 27.9548 2.92574 27.9468C4.17389 27.9116 5.425 27.9292 6.67611 27.9292Z" fill="#666666" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M7.44864 31.0306C8.1644 31.0306 8.88017 31.0306 9.59593 31.0306C10.1875 31.0306 10.501 31.2736 10.5099 31.7304C10.5187 32.1872 10.1993 32.4741 9.62551 32.4741C8.1644 32.4741 6.70133 32.4741 5.23628 32.4741C4.68318 32.4741 4.34896 32.1579 4.36375 31.7128C4.37854 31.2678 4.70389 31.0335 5.25106 31.0306C5.98457 31.0277 6.71513 31.0306 7.44864 31.0306Z" fill="#666666" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M8.21188 35.5746C7.95276 35.5878 7.69313 35.5878 7.43401 35.5746C7.33599 35.5723 7.23941 35.5509 7.14982 35.5115C7.06023 35.472 6.97942 35.4154 6.91205 35.3449C6.84468 35.2744 6.79208 35.1914 6.75729 35.1007C6.7225 35.0099 6.70622 34.9133 6.70937 34.8163C6.72157 34.6298 6.80704 34.4556 6.94746 34.3308C7.08789 34.206 7.2721 34.1406 7.46062 34.1487C7.98118 34.134 8.50174 34.134 9.01934 34.1487C9.10946 34.1443 9.19955 34.158 9.28421 34.1889C9.36887 34.2198 9.44636 34.2673 9.51207 34.3285C9.57778 34.3898 9.63035 34.4635 9.66663 34.5453C9.70292 34.627 9.72218 34.7152 9.72327 34.8045C9.73431 34.8973 9.72617 34.9912 9.69935 35.0807C9.67253 35.1702 9.6276 35.2534 9.56728 35.3252C9.50696 35.3969 9.43252 35.4558 9.34849 35.4982C9.26446 35.5406 9.17259 35.5656 9.07849 35.5717C8.783 35.5898 8.48667 35.5898 8.19118 35.5717L8.21188 35.5746Z" fill="#666666" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M50.0664 31.739C49.7233 33.0069 49.4098 34.222 49.0608 35.4254C48.9904 35.6882 48.8415 35.9239 48.6336 36.1015C48.4256 36.2791 48.1684 36.3905 47.8954 36.4209C47.8658 36.3444 47.845 36.2649 47.8333 36.1837C47.8126 34.6085 46.4284 32.9629 43.9617 33.4256C43.1965 33.5616 42.4746 33.8746 41.8547 34.3392C41.2349 34.8037 40.7346 35.4067 40.3947 36.0988C40.3504 36.2157 40.2685 36.3149 40.1616 36.381C40.0546 36.4472 39.9287 36.4766 39.8032 36.4648C38.6378 36.4443 37.4695 36.4648 36.2539 36.4648C36.2953 36.2745 36.319 36.134 36.3545 35.9993C36.6946 34.7227 37.0495 33.4519 37.3719 32.1724C37.4636 31.8122 37.6263 31.7039 38.0019 31.7068C40.6638 31.7244 43.3051 31.7068 45.9581 31.7068C46.1568 31.7156 46.3558 31.6979 46.5497 31.6541C46.7205 31.6189 46.8703 31.5181 46.9662 31.3737C47.0621 31.2294 47.0963 31.0533 47.0614 30.8841C47.0539 30.7203 46.9836 30.5656 46.8649 30.4514C46.7462 30.3371 46.588 30.272 46.4225 30.2692C46.2609 30.2604 46.099 30.2604 45.9374 30.2692H37.9516C37.9871 30.0906 38.0078 29.9764 38.0374 29.8475C38.9247 26.4657 39.8593 23.1043 40.7467 19.7225C40.8443 19.3536 41.0129 19.2862 41.3382 19.2892C43.098 19.3038 44.8549 19.2892 46.6118 19.2892C47.3216 19.2892 47.3956 19.3653 47.3985 20.0592C47.3985 20.3286 47.3985 20.6009 47.3985 20.9376H45.5293C45.0886 20.9376 44.642 20.9376 44.2101 20.9376C43.5789 20.9453 42.9674 21.1572 42.4692 21.541C41.9709 21.9248 41.6132 22.4595 41.4506 23.0634C41.2436 23.7895 41.0454 24.5274 40.8591 25.2535C40.4746 26.7643 41.2879 27.8009 42.8673 27.8067C44.4467 27.8126 45.9581 27.8067 47.505 27.8067C47.7745 27.8187 48.0358 27.9016 48.2622 28.0468C48.9247 28.4802 49.5784 28.9252 50.2024 29.4259C50.3681 29.5577 50.4065 29.8446 50.4982 30.0613C50.3175 30.1274 50.1328 30.1822 49.9451 30.2253C49.7706 30.2545 49.5872 30.2253 49.4098 30.2253C49.3235 30.2241 49.2379 30.2398 49.1578 30.2714C49.0777 30.303 49.0047 30.3499 48.9429 30.4094C48.8811 30.469 48.8317 30.54 48.7977 30.6184C48.7636 30.6968 48.7455 30.7811 48.7443 30.8665C48.7293 30.9555 48.7329 31.0467 48.7549 31.1343C48.777 31.2219 48.817 31.3041 48.8725 31.3757C48.9279 31.4474 48.9977 31.507 49.0774 31.5509C49.1571 31.5947 49.2451 31.6219 49.3358 31.6307C49.5769 31.6815 49.8209 31.7177 50.0664 31.739Z" fill="#EFEFEF"/>
+                                                    <path d="M47.3808 26.3688C45.7896 26.3688 44.2338 26.3688 42.6781 26.3688C42.6078 26.3789 42.536 26.3705 42.4701 26.3445C42.4041 26.3184 42.3462 26.2757 42.3021 26.2205C42.2581 26.1654 42.2295 26.0997 42.2192 26.0302C42.2088 25.9606 42.2171 25.8896 42.2433 25.8242C42.4651 24.9458 42.6751 24.0674 42.9679 23.23C43.0451 22.9957 43.195 22.7914 43.3963 22.6463C43.5975 22.5012 43.8399 22.4227 44.0889 22.4219C45.1714 22.3955 46.2569 22.4219 47.3808 22.4219V26.3688Z" fill="#EFEFEF"/>
+                                                    <path d="M20.4591 34.8164C21.6422 34.8164 22.3195 35.6655 22.074 36.8075C21.8959 37.5223 21.5033 38.1671 20.9479 38.6568C20.3925 39.1465 19.7003 39.4583 18.9625 39.551C17.6966 39.6623 16.8921 38.7663 17.1553 37.5014C17.4393 36.0725 19.0009 34.8164 20.4591 34.8164ZM19.6132 37.9055C19.8078 37.8972 19.9917 37.815 20.1267 37.6759C20.2616 37.5368 20.3373 37.3516 20.3378 37.1588C20.3287 36.9724 20.2474 36.7966 20.1108 36.6679C19.9743 36.5392 19.7929 36.4676 19.6043 36.4678C19.5119 36.467 19.4202 36.4843 19.3345 36.5186C19.2488 36.5529 19.1707 36.6036 19.1048 36.6678C19.0389 36.7319 18.9864 36.8083 18.9503 36.8926C18.9142 36.9768 18.8952 37.0673 18.8945 37.1588C18.8925 37.254 18.9096 37.3487 18.9447 37.4374C18.9798 37.5261 19.0322 37.607 19.099 37.6756C19.1658 37.7441 19.2456 37.7989 19.3338 37.8369C19.4221 37.8748 19.517 37.8951 19.6132 37.8967V37.9055Z" fill="#EFEFEF"/>
+                                                    <path d="M46.3649 36.412C46.3354 38.0224 44.4957 39.6737 42.8748 39.5449C42.6494 39.5425 42.4273 39.4914 42.2239 39.3953C42.0205 39.2991 41.8407 39.1602 41.6971 38.9882C41.5534 38.8162 41.4495 38.6153 41.3924 38.3994C41.3352 38.1835 41.3264 37.9579 41.3664 37.7383C41.5557 36.1543 43.2446 34.7371 44.8506 34.8103C45.06 34.8044 45.2683 34.8426 45.4617 34.9225C45.6551 35.0023 45.8292 35.1219 45.9724 35.2733C46.1155 35.4247 46.2246 35.6046 46.2923 35.8009C46.3599 35.9972 46.3847 36.2055 46.3649 36.412ZM43.8627 37.8964C44.0509 37.8951 44.2313 37.8218 44.3663 37.692C44.5013 37.5622 44.5805 37.3858 44.5874 37.1996C44.5926 37.1034 44.5779 37.0072 44.544 36.9169C44.5102 36.8266 44.4579 36.7441 44.3905 36.6747C44.3231 36.6052 44.242 36.5502 44.1522 36.5131C44.0625 36.4759 43.9659 36.4575 43.8686 36.4588C43.6794 36.4595 43.4978 36.5328 43.3621 36.6633C43.2264 36.7938 43.1472 36.9714 43.141 37.1586C43.144 37.3509 43.2214 37.5347 43.3574 37.672C43.4934 37.8094 43.6775 37.8897 43.8716 37.8964H43.8627Z" fill="#EFEFEF"/>
+                                                    <path d="M30.9848 18.5889C30.9854 20.5928 30.3855 22.5518 29.2611 24.218C28.1366 25.8843 26.5381 27.1828 24.6679 27.9494C22.7977 28.716 20.7398 28.9161 18.7546 28.5245C16.7694 28.1328 14.9463 27.167 13.5158 25.7492C12.0853 24.3315 11.1118 22.5255 10.7184 20.5598C10.3251 18.5941 10.5297 16.5571 11.3062 14.7066C12.0827 12.856 13.3963 11.2751 15.0807 10.1638C16.7652 9.05259 18.7447 8.46098 20.7689 8.46388C23.4766 8.47622 26.0696 9.5473 27.9831 11.4438C29.8966 13.3403 30.9755 15.9085 30.9848 18.5889ZM19.6775 20.6122C20.6861 20.987 21.5586 20.905 22.301 20.2315C23.0434 19.5581 23.1883 18.6973 22.8926 17.7515C22.8844 17.6802 22.8918 17.6081 22.9142 17.5399C22.9367 17.4717 22.9737 17.409 23.0227 17.3562C23.564 16.797 24.123 16.2582 24.6731 15.7107C25.3415 15.0519 26.0159 14.3989 26.6725 13.7284C27.1398 13.2629 26.9919 12.5631 26.4034 12.484C26.2567 12.4764 26.11 12.4985 25.9722 12.5488C25.8344 12.5992 25.7084 12.6767 25.6018 12.7768C24.4187 13.9158 23.2357 15.087 22.0733 16.2524C22.0051 16.3486 21.906 16.4192 21.7922 16.4527C21.6784 16.4862 21.5565 16.4806 21.4462 16.4368C21.0465 16.2887 20.6111 16.2625 20.1962 16.3616C19.7813 16.4608 19.4059 16.6808 19.1185 16.9932C18.816 17.2864 18.6034 17.6583 18.505 18.066C18.4066 18.4737 18.4265 18.9005 18.5625 19.2975C18.5795 19.3901 18.5764 19.4853 18.5535 19.5766C18.5305 19.668 18.4882 19.7535 18.4294 19.8275C18.0538 20.2491 17.6308 20.6297 17.2463 21.0309C16.8618 21.432 16.7849 21.839 17.1103 22.1699C17.4356 22.5007 17.8674 22.4627 18.2638 22.0645C18.7311 21.5901 19.2013 21.1011 19.6775 20.6122ZM21.4758 11.2426C21.4758 11.0991 21.4758 10.9498 21.4758 10.8121C21.4786 10.7227 21.4633 10.6337 21.4309 10.5502C21.3985 10.4666 21.3497 10.3904 21.2871 10.3258C21.2246 10.2612 21.1498 10.2095 21.0669 10.1739C20.984 10.1383 20.8948 10.1193 20.8044 10.1182C20.7158 10.1051 20.6255 10.11 20.5389 10.1328C20.4523 10.1555 20.3714 10.1955 20.301 10.2504C20.2307 10.3052 20.1724 10.3737 20.1297 10.4517C20.0871 10.5297 20.0611 10.6155 20.0532 10.7038C20.0102 11.0683 20.0192 11.4369 20.0798 11.7989C20.0941 11.8793 20.1242 11.9561 20.1685 12.025C20.2129 12.0938 20.2705 12.1533 20.338 12.2001C20.4056 12.2469 20.4819 12.28 20.5624 12.2976C20.6429 12.3152 20.7262 12.3168 20.8074 12.3025C20.9706 12.3026 21.1281 12.2428 21.2494 12.1347C21.3707 12.0265 21.4472 11.8776 21.464 11.7169C21.4769 11.5572 21.4809 11.3969 21.4758 11.2367V11.2426ZM13.2741 19.2975C13.4199 19.3048 13.566 19.3048 13.7118 19.2975C13.8069 19.3004 13.9015 19.2839 13.9897 19.2488C14.078 19.2138 14.158 19.1611 14.2246 19.094C14.2913 19.0269 14.3432 18.9469 14.3772 18.8589C14.4111 18.771 14.4262 18.6771 14.4217 18.5831C14.4294 18.4942 14.4187 18.4047 14.3904 18.3199C14.3621 18.2352 14.3167 18.1571 14.2569 18.0903C14.1972 18.0235 14.1244 17.9694 14.0429 17.9313C13.9614 17.8932 13.8729 17.8719 13.7828 17.8686C13.4607 17.8291 13.1348 17.8291 12.8127 17.8686C12.6405 17.8943 12.4836 17.9813 12.3715 18.1133C12.2594 18.2452 12.1998 18.4132 12.2038 18.5855C12.2077 18.7579 12.2751 18.9229 12.3932 19.0497C12.5113 19.1765 12.672 19.2562 12.8452 19.2741C12.9877 19.289 13.1308 19.2968 13.2741 19.2975ZM28.1662 19.2975C28.2963 19.2975 28.4264 19.2975 28.5536 19.2975C28.6476 19.3039 28.742 19.2911 28.8308 19.2599C28.9196 19.2286 29.0009 19.1796 29.0697 19.1159C29.1385 19.0522 29.1933 18.9751 29.2308 18.8895C29.2682 18.8038 29.2873 18.7115 29.2871 18.6182C29.2958 18.5217 29.284 18.4244 29.2523 18.3327C29.2205 18.2411 29.1697 18.157 29.103 18.086C29.0364 18.0151 28.9554 17.9588 28.8653 17.9208C28.7752 17.8829 28.6781 17.8641 28.5802 17.8657C28.2576 17.8392 27.9329 17.851 27.6131 17.9008C27.5282 17.9136 27.4467 17.943 27.3735 17.9874C27.3002 18.0318 27.2367 18.0901 27.1865 18.1591C27.1364 18.2282 27.1007 18.3064 27.0815 18.3892C27.0623 18.4721 27.06 18.5579 27.0748 18.6416C27.0754 18.8024 27.1363 18.9572 27.2455 19.0762C27.3548 19.1952 27.5047 19.2699 27.6663 19.2858C27.8408 19.2975 28.0035 19.2975 28.1662 19.2975ZM21.461 25.9792C21.461 25.8357 21.461 25.6864 21.461 25.5488C21.4558 25.3665 21.3803 25.193 21.25 25.064C21.1197 24.935 20.9446 24.8602 20.7604 24.855C20.5762 24.8498 20.397 24.9145 20.2594 25.0358C20.1219 25.1572 20.0365 25.3261 20.0206 25.5078C19.9851 25.8103 19.9851 26.1159 20.0206 26.4184C20.0422 26.5949 20.1299 26.7569 20.2665 26.8723C20.4031 26.9877 20.5785 27.0481 20.7579 27.0415C20.9374 27.0348 21.1077 26.9617 21.2352 26.8365C21.3627 26.7113 21.4381 26.5433 21.4462 26.3657C21.4699 26.2369 21.461 26.108 21.461 25.9792Z" fill="#EFEFEF" stroke="#F9F9F9" stroke-width="0.2"/>
+                                                    <path d="M19.6134 37.8959C19.5172 37.8944 19.4223 37.874 19.334 37.8361C19.2458 37.7982 19.166 37.7433 19.0992 37.6748C19.0324 37.6062 18.98 37.5253 18.9449 37.4366C18.9098 37.3479 18.8927 37.2533 18.8947 37.158C18.8958 37.0658 18.9155 36.9746 18.9525 36.8899C18.9895 36.8053 19.0431 36.7287 19.1102 36.6647C19.1774 36.6007 19.2567 36.5505 19.3436 36.5171C19.4305 36.4836 19.5232 36.4676 19.6164 36.4699C19.8024 36.4727 19.9804 36.5452 20.1144 36.673C20.2484 36.8007 20.3283 36.9741 20.338 37.158C20.3352 37.3493 20.2586 37.5323 20.1238 37.6695C19.9891 37.8067 19.8065 37.8877 19.6134 37.8959Z" fill="#666666"/>
+                                                    <path d="M43.8731 37.8967C43.679 37.89 43.4949 37.8096 43.3589 37.6723C43.2229 37.535 43.1455 37.3511 43.1426 37.1589C43.1525 36.9727 43.2346 36.7975 43.3718 36.6699C43.509 36.5422 43.6908 36.4719 43.879 36.4737C43.9763 36.4724 44.0729 36.4908 44.1626 36.528C44.2524 36.5651 44.3335 36.6201 44.4009 36.6896C44.4683 36.759 44.5206 36.8415 44.5544 36.9318C44.5883 37.0221 44.603 37.1183 44.5978 37.2145C44.5872 37.3981 44.5065 37.5708 44.3718 37.6976C44.2372 37.8243 44.0589 37.8955 43.8731 37.8967Z" fill="#666666"/>
+                                                    <path d="M19.6791 20.612C19.2029 21.101 18.7326 21.59 18.2505 22.076C17.8542 22.4684 17.4076 22.5006 17.097 22.1814C16.7865 21.8623 16.8161 21.4641 17.2331 21.0424C17.6501 20.6208 18.0524 20.2607 18.4162 19.839C18.4792 19.7649 18.5251 19.678 18.5507 19.5844C18.5762 19.4908 18.5808 19.3928 18.5641 19.2973C18.4261 18.8985 18.4053 18.4691 18.5043 18.0591C18.6033 17.649 18.8178 17.2753 19.1231 16.9813C19.4105 16.6689 19.7858 16.4489 20.2007 16.3497C20.6156 16.2506 21.0511 16.2768 21.4508 16.425C21.561 16.4687 21.6829 16.4743 21.7967 16.4408C21.9106 16.4074 22.0096 16.3368 22.0778 16.2405C23.2461 15.0693 24.4114 13.8981 25.6064 12.765C25.7129 12.6649 25.8389 12.5873 25.9767 12.537C26.1145 12.4866 26.2612 12.4646 26.4079 12.4722C26.9994 12.5629 27.1325 13.251 26.68 13.7166C26.0234 14.3871 25.349 15.04 24.6806 15.6988C24.1305 16.2464 23.5715 16.7851 23.0302 17.3444C22.9812 17.3972 22.9442 17.4598 22.9217 17.528C22.8993 17.5962 22.8919 17.6684 22.9001 17.7396C23.1958 18.6854 23.0479 19.5345 22.3085 20.2197C21.5691 20.9048 20.6877 20.9868 19.6791 20.612ZM21.5632 18.5858C21.5655 18.4777 21.5461 18.3702 21.506 18.2696C21.4659 18.169 21.406 18.0773 21.3297 17.9999C21.2535 17.9225 21.1624 17.8609 21.0618 17.8187C20.9612 17.7766 20.8531 17.7546 20.7439 17.7543C20.5232 17.7574 20.3125 17.8463 20.1576 18.0019C20.0026 18.1576 19.9157 18.3673 19.9157 18.5858C19.9195 18.7962 20.0054 18.9969 20.1554 19.1459C20.3053 19.2949 20.5078 19.3807 20.7202 19.3852C20.8295 19.3912 20.9389 19.3749 21.0416 19.3374C21.1442 19.2998 21.238 19.2417 21.3171 19.1667C21.3961 19.0918 21.4588 19.0015 21.5011 18.9016C21.5434 18.8017 21.5646 18.6942 21.5632 18.5858Z" fill="#666666"/>
+                                                    <path d="M21.4774 11.237C21.4776 11.3974 21.4687 11.5577 21.4508 11.7172C21.434 11.8779 21.3575 12.0268 21.2362 12.135C21.1149 12.2431 20.9574 12.3029 20.7942 12.3028C20.713 12.3171 20.6298 12.3154 20.5492 12.2979C20.4687 12.2803 20.3924 12.2472 20.3249 12.2004C20.2573 12.1536 20.1997 12.0941 20.1554 12.0253C20.111 11.9564 20.0809 11.8796 20.0666 11.7992C20.0078 11.4399 19.9998 11.0743 20.0429 10.7129C20.0508 10.6246 20.0769 10.5388 20.1195 10.4608C20.1621 10.3828 20.2204 10.3143 20.2908 10.2594C20.3612 10.2046 20.4421 10.1646 20.5287 10.1418C20.6153 10.1191 20.7056 10.1142 20.7942 10.1273C20.9736 10.1304 21.1445 10.2035 21.2697 10.3307C21.3949 10.4579 21.4642 10.629 21.4626 10.8066C21.4626 10.95 21.4626 11.0994 21.4626 11.237H21.4774Z" fill="#666666"/>
+                                                    <path d="M13.2757 19.2974C13.1308 19.3047 12.9857 19.3047 12.8409 19.2974C12.6677 19.2796 12.5069 19.1998 12.3888 19.073C12.2707 18.9463 12.2034 18.7812 12.1994 18.6089C12.1954 18.4365 12.2551 18.2686 12.3672 18.1366C12.4793 18.0046 12.6361 17.9176 12.8084 17.892C13.1305 17.8524 13.4563 17.8524 13.7785 17.892C13.8669 17.8946 13.954 17.9146 14.0345 17.9509C14.115 17.9873 14.1874 18.0391 14.2474 18.1034C14.3075 18.1678 14.3539 18.2433 14.3841 18.3257C14.4143 18.408 14.4276 18.4955 14.4233 18.583C14.4278 18.677 14.4126 18.7709 14.3787 18.8588C14.3448 18.9468 14.2929 19.0268 14.2262 19.0939C14.1595 19.161 14.0796 19.2137 13.9913 19.2488C13.9031 19.2838 13.8084 19.3003 13.7134 19.2974C13.5676 19.3047 13.4215 19.3047 13.2757 19.2974Z" fill="#666666"/>
+                                                    <path d="M28.1662 19.2981C28.0035 19.2981 27.8408 19.2981 27.6811 19.2747C27.5195 19.2587 27.3696 19.1841 27.2603 19.0651C27.1511 18.9461 27.0903 18.7913 27.0896 18.6305C27.0604 18.464 27.0991 18.2927 27.1972 18.1544C27.2954 18.0161 27.4449 17.9219 27.6131 17.8926C27.9329 17.8428 28.2576 17.831 28.5803 17.8575C28.6781 17.8559 28.7753 17.8747 28.8653 17.9126C28.9554 17.9506 29.0364 18.0069 29.1031 18.0778C29.1697 18.1488 29.2206 18.2329 29.2523 18.3245C29.284 18.4162 29.2959 18.5135 29.2872 18.61C29.2886 18.704 29.2703 18.7973 29.2335 18.884C29.1966 18.9707 29.142 19.0488 29.073 19.1135C29.0041 19.1782 28.9223 19.228 28.8329 19.2598C28.7435 19.2915 28.6484 19.3046 28.5537 19.2981C28.4265 19.2981 28.2963 19.2981 28.1662 19.2981Z" fill="#666666"/>
+                                                    <path d="M21.462 25.979C21.462 26.1078 21.462 26.2367 21.462 26.3655C21.4538 26.5431 21.3785 26.7111 21.251 26.8363C21.1235 26.9615 20.9531 27.0346 20.7737 27.0413C20.5943 27.0479 20.4189 26.9875 20.2823 26.8721C20.1457 26.7567 20.0579 26.5947 20.0364 26.4182C20.0009 26.1157 20.0009 25.8101 20.0364 25.5076C20.0522 25.3259 20.1377 25.157 20.2752 25.0356C20.4127 24.9142 20.592 24.8495 20.7762 24.8548C20.9603 24.86 21.1355 24.9348 21.2658 25.0638C21.3961 25.1928 21.4716 25.3662 21.4768 25.5486C21.4768 25.692 21.4768 25.8414 21.4768 25.979H21.462Z" fill="#666666"/>
+                                                    <path d="M21.5615 18.5864C21.5629 18.6948 21.5418 18.8023 21.4994 18.9022C21.4571 19.0021 21.3944 19.0924 21.3154 19.1673C21.2363 19.2423 21.1426 19.3004 21.0399 19.338C20.9372 19.3755 20.8279 19.3918 20.7186 19.3858C20.5061 19.3813 20.3037 19.2955 20.1537 19.1465C20.0037 18.9975 19.9178 18.7968 19.9141 18.5864C19.914 18.3679 20.0009 18.1582 20.1559 18.0025C20.3109 17.8469 20.5215 17.758 20.7422 17.7549C20.8515 17.7552 20.9595 17.7772 21.0601 17.8193C21.1607 17.8615 21.2518 17.9231 21.3281 18.0005C21.4043 18.0779 21.4643 18.1696 21.5044 18.2702C21.5444 18.3708 21.5639 18.4783 21.5615 18.5864Z" fill="#EFEFEF"/>
+                                                    </svg>
+                                                    
+                                                <div class="cnt">
+                                                    <p class="text ">Next Day Delivery</p>
+                                                    <p class="sub_text">within 48 Hours</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="trust_badge ">
+                                            <input type="radio" name="express_delivery" id="pick_up">
+                                            <label for="pick_up">
+                                                <svg width="54" height="49" viewBox="0 0 54 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M36.5507 23.2112L35.652 25.0526L34 25.4757L32.2599 25.03L30.3578 23.0812L29.9216 22.6342L29.5809 23.1578L28.6535 24.583L26.8794 25.4919H24.7866L23.4315 23.1778L23.0592 22.5421L22.6059 23.1227L20.756 25.4919H18.244L16.3941 23.1227L16 22.618L15.6059 23.1227L13.756 25.4919H11.6787L9.5 23.7061V19.9599L14.3124 10.0986H38.6876L43.5 19.9599V21.3329L43.0151 23.817L42.6096 25.0635L40.937 25.4919H39.5H38.7866L37.4315 23.1778L36.9599 22.3725L36.5507 23.2112Z" fill="#E9E9E9" stroke="#EFEFEF"/>
+                                                    <path d="M14 39.7771V24.6879V21.8936H39V40.336H22.8235H14.9804L14 39.7771Z" fill="#E9E9E9" stroke="#EFEFEF"/>
+                                                    <g opacity="0.73" clip-path="url(#clip0_1821_53)">
+                                                    <path d="M38.6667 39.2503H38.9167V39.0003V29.917H40.75V39.0003C40.75 39.5529 40.5305 40.0828 40.1398 40.4735C39.7491 40.8642 39.2192 41.0837 38.6667 41.0837H15.3333C14.7808 41.0837 14.2509 40.8642 13.8602 40.4735C13.4695 40.0828 13.25 39.5529 13.25 39.0003V29.917H15.0833V39.0003V39.2503H15.3333H22.3333H22.5833V39.0003V29.917H24.4167V39.0003V39.2503H24.6667H38.6667Z" fill="#333333" stroke="#F6F6F6" stroke-width="0.5"/>
+                                                    <path d="M40.4387 10.0738L40.4385 10.0732C40.266 9.72615 40.0001 9.43404 39.6707 9.22978C39.3413 9.02553 38.9616 8.91721 38.574 8.91699H15.4273C15.0399 8.9172 14.66 9.02552 14.3306 9.22978C14.0012 9.43405 13.7354 9.72615 13.5629 10.0732L13.5626 10.0738L8.80275 19.5935C8.65764 19.8846 8.58273 20.2057 8.584 20.531L8.584 20.532L8.584 24.1253V24.1258C8.58305 24.6116 8.75186 25.0823 9.06118 25.4567C9.55132 26.0179 10.1564 26.4671 10.8353 26.774C11.5153 27.0813 12.2534 27.2387 12.9996 27.2353L13.0011 27.2353C14.2192 27.2372 15.4002 26.816 16.3422 26.0437L16.5007 25.9137L16.6592 26.0437C17.6013 26.8166 18.7822 27.2389 20.0007 27.2389C21.2192 27.2389 22.4 26.8166 23.3421 26.0437L23.5007 25.9136L23.6592 26.0437C24.6013 26.8166 25.7822 27.2389 27.0007 27.2389C28.2192 27.2389 29.4 26.8166 30.3421 26.0437L30.5007 25.9136L30.6592 26.0437C31.6013 26.8166 32.7822 27.2389 34.0007 27.2389C35.2192 27.2389 36.4 26.8166 37.3421 26.0437L37.5007 25.9136L37.6593 26.0438C38.7108 26.9071 40.0561 27.3292 41.4124 27.2212C42.7676 27.1133 44.0283 26.4845 44.9298 25.4669M44.9298 25.4669C44.9291 25.4677 44.9284 25.4685 44.9278 25.4693L45.119 25.6303L44.9318 25.4647C44.9311 25.4654 44.9304 25.4662 44.9298 25.4669Z" fill="#333333" stroke="#F6F6F6" stroke-width="0.5"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1821_53">
+                                                    <rect width="42" height="42" fill="white" transform="translate(6 4)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                    </svg>
+                                                    
+                                                <div class="cnt">
+                                                    <p class="text ">Pick Up </p>
+                                                    <p class="sub_text">within 15 mins</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="delivery_address">
+                                        <img src="../assets/images/location.png" alt="location">
+                                        <p class="primary_text text">Delivering to: <span>Plot 321 Street 1, I-9/3 Islamabad</span> </p>
+                                        <a href="#" class="change_link primary_text">Change</a>         
+                                    </div>
+                                    
+                                    <div class="product_tabs">
+                                        <div class="tab">
+                                            <p class="tab_title primary_text">Send as a Gift</p>
+                                            <a href="#"><img src="../assets/images/arrow.png" alt="arrow"></a>
+                                        </div>
+                                        <div class="tab">
+                                            <p class="tab_title primary_text">Questions & Answers</p>
+                                            <a href="#"><img src="../assets/images/arrow.png" alt="arrow"></a>
+                                        </div>
+                                        <div class="tab">
+                                            <p class="tab_title primary_text">Reviews</p>
+                                            <a href="#"><img src="../assets/images/arrow.png" alt="arrow"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="section_padding primarybg">
+                    <div class="main_container product_container">
+                        <div class="image_with_video ">
+                            <div class="text_block common_block">
+                                <h2 class="title primary_title">Making delicious Excellent Croissant</h2>
+                                <p class="primary_text">Start your day with a touch of luxury and transform your morning breakfast into an extraordinary experience. Immerse yourself in the sheer pleasure of our delectable pastries, crafted to perfection.</p>
+                                <p class="primary_text">Embrace the unparalleled joy of our divine pastries today. Start your day with a touch of luxury and transform your morning breakfast into an extraordinary experience. Immerse yourself in the sheer pleasure of our delectable pastries, crafted to perfection. Embrace the unparalleled joy of our divine pastries today.</p>
+                            </div>
+                            
+                            <div class="video_block common_block">
+                                 <img src="../assets/images/video_img.png" alt="">
+                                <div class="video_pause_icon" onclick="pauseVideo('video1')"><img src="../assets/images/pasue_icon.png" alt=""></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="section_padding">
+                    <div class="main_container product_container">
+                        <div class="remomended_recently_section">
+                            <h2 class="title primary_title">You will Love. Recommended for you.</h2>
+
+                            <div class="categories_inner product_block grid_3">
+                                <div class="product_Card">
+                                    <div class="img_block">
+                                        <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                        <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                        <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                        <span>Best Seller</span>
+                                        <div class="img_cnt">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                        </div>
+                                    </div>
+                                    <div class="cnt_block">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <div class="weight">
+                                            <div href="#!" class="swatch-option selected">1 pound</div>
+                                            <div href="#!" class="swatch-option">2 pound</div>
+                                        </div>
+                                        <p>PKR 550.00</p>
+
+                                        <div class="product_cta" id="1">
+                                            <a href="#!" class="primary_cta add_to_basket" onclick="hide_button(1)">Add to basket</a>
+                                            <div class="quantity primary_cta">
+                                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                                <button class="plus" aria-label="Increase">&plus;</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_Card">
+                                <div class="img_block">
+                                        <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                        <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                        <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                        <div class="img_cnt">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                        </div>
+                                </div>
+                                <div class="cnt_block">
+                                    <a href="#" class="product_title">Chocolate Filled Croissants</a>
+                                    <div class="weight">
+                                        <div href="#!" class="swatch-option selected">1 pound</div>
+                                        <div href="#!" class="swatch-option">2 pound</div>
+                                    </div>
+                                    <p>PKR 550.00</p>
+
+                                    <div class="product_cta" id="2">
+                                        <a href="#!" class="primary_cta add_to_basket"  onclick="hide_button(2)">Add to basket</a>
+                                        <div class="quantity primary_cta">
+                                            <button class="minus" aria-label="Decrease">&minus;</button>
+                                            <input type="number" class="input-box" value="1" min="1" max="10">
+                                            <button class="plus" aria-label="Increase">&plus;</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="product_Card" >
+                                    <div class="img_block">
+                                            <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                            <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                            <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                            <div class="img_cnt">
+                                            <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                            <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                            </div>
+                                    </div>
+                                    <div class="cnt_block">
+                                    <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                    <div class="weight">
+                                        <div href="#!" class="swatch-option selected">1 pound</div>
+                                        <div href="#!" class="swatch-option">2 pound</div>
+                                    </div>
+                                    <p>PKR 550.00</p>
+
+                                    <div class="product_cta" id="3">
+                                        <a href="#!" class="primary_cta add_to_basket" onclick="hide_button(3)">Add to basket</a>
+                                        <div class="quantity primary_cta">
+                                            <button class="minus" aria-label="Decrease">&minus;</button>
+                                            <input type="number" class="input-box" value="1" min="1" max="10">
+                                            <button class="plus" aria-label="Increase">&plus;</button>
+                                            </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_padding primarybg">
+                    <div class="main_container product_container">
+                        <div class=" remomended_recently_section">
+                            <h2 class="title primary_title">Recently viewed products</h2>
+
+                            <div class="categories_inner product_block grid_3">
+                                <div class="product_Card">
+                                    <div class="img_block">
+                                        <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                        <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                        <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                        <span>Best Seller</span>
+                                        <div class="img_cnt">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                        </div>
+                                    </div>
+                                    <div class="cnt_block">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <div class="weight">
+                                            <div href="#!" class="swatch-option selected">1 pound</div>
+                                            <div href="#!" class="swatch-option">2 pound</div>
+                                        </div>
+
+                                        <div class="product_cta" id="1">
+                                            <a href="#!" class="primary_cta add_to_basket" onclick="hide_button(1)">Add to basket</a>
+                                            <div class="quantity primary_cta">
+                                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                                <button class="plus" aria-label="Increase">&plus;</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_Card">
+                                    <div class="img_block">
+                                            <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                            <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                            <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                            <div class="img_cnt">
+                                            <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                            <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                            </div>
+                                    </div>
+                                    <div class="cnt_block">
+                                        <a href="#" class="product_title">Chocolate Filled Croissants</a>
+                                        <div class="weight">
+                                            <div href="#!" class="swatch-option selected">1 pound</div>
+                                            <div href="#!" class="swatch-option">2 pound</div>
+                                        </div>
+
+                                        <div class="product_cta" id="2">
+                                            <a href="#!" class="primary_cta add_to_basket"  onclick="hide_button(2)">Add to basket</a>
+                                            <div class="quantity primary_cta">
+                                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                                <button class="plus" aria-label="Increase">&plus;</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_Card" >
+                                    <div class="img_block">
+                                            <a href="#!" class="product_img"><img src="../assets/images/product_11.png" alt="Product"></a> 
+                                            <a href="#!" class="whishlist_icon"><img src="../assets/images/Wishlist.png" alt="whishlist"></a>
+                                            <a href="#!" class="show_icon"><img src="../assets/images/show1.png" alt="show"></a>
+                                            <div class="img_cnt">
+                                            <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                            <p class="primary_text">Shop our exquisite collection of luxury brownies and elevate your taste ..</p>
+                                            </div>
+                                    </div>
+                                    <div class="cnt_block">
+                                        <a href="#!" class="product_title">Chocolate Filled Croissants</a>
+                                        <div class="weight">
+                                            <div href="#!" class="swatch-option selected">1 pound</div>
+                                            <div href="#!" class="swatch-option">2 pound</div>
+                                        </div>
+
+                                        <div class="product_cta" id="3">
+                                            <a href="#!" class="primary_cta add_to_basket" onclick="hide_button(3)">Add to basket</a>
+                                            <div class="quantity primary_cta">
+                                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                                <button class="plus" aria-label="Increase">&plus;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <div class="main_container">
+            <div class="email_row">
+                <div class="title_block">
+                    <h2>Enter the world of Tehzeeb</h2>
+                    <p>News, Bakery Creation & Latest events in stores.</p>
+                </div>
+                <div class="email_field">
+                        <div class="input_field">                                
+                            <input  type="text" placeholder="Enter your email address" name="Enter your email address" id="Enter your email address">
+                        </div>
+                        <a href="#!" class="footer_Cta primary_cta">Subscribe</a>
+                </div>
+            </div>   
+            <div class="footer_row">
+                    <div class="footer_block two_col">
+                        <h2 class="footer_title">Categories</h2>
+                        <ul class="footer_list">
+                            <li><a href="#" class="footer_link">Cakes</a></li>
+                            <li><a href="#" class="footer_link">Biscuit</a></li>
+                            <li><a href="#" class="footer_link">Pastry</a></li>
+                            <li><a href="#" class="footer_link">Salad</a></li>
+                            <li><a href="#" class="footer_link">Bread</a></li>
+                            <li><a href="#" class="footer_link">Pizza</a></li>
+                            <li><a href="#" class="footer_link">Donut</a></li>
+                            <li><a href="#" class="footer_link">Snacks</a></li>
+                            <li><a href="#" class="footer_link">Puff</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <h2 class="footer_title">Company</h2>
+                        <ul class="footer_list">
+                            <li><a href="#" class="footer_link">Support</a></li>
+                            <li><a href="#" class="footer_link">Contact us</a></li>
+                            <li><a href="#" class="footer_link">Write to us</a></li>
+                            <li><a href="#" class="footer_link">Terms &amp; Conditions</a></li>
+                            <li><a href="#" class="footer_link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <h2 class="footer_title">Services</h2>
+                        <ul class="footer_list">
+                            <li><a href="#" class="footer_link">My Birthday</a></li>
+                            <li><a href="#" class="footer_link">My Anniversary</a></li>
+                            <li><a href="#" class="footer_link">My Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_block">
+                        <h2 class="footer_title">Quick Links</h2>
+                        <ul class="footer_list">
+                            <li><a href="#" class="footer_link">FAQs</a></li>
+                            <li><a href="#" class="footer_link">Help</a></li>
+                            <li><a href="#" class="footer_link">My Account</a></li>
+                            <li><a href="#" class="footer_link">Wishlist</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="footer_social">
+            
+                <ul class="social_block">
+                    <li class="social_list">
+                        <a href="#" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                                <path d="M8.08008 23.5679V13.0302H11.6351L12.1635 8.90436H8.08008V6.27636C8.08008 5.08579 8.4118 4.27064 10.1205 4.27064H12.2857V0.592214C11.2322 0.479317 10.1733 0.424805 9.1138 0.428928C5.97151 0.428928 3.81408 2.34721 3.81408 5.86879V8.89664H0.282227V13.0225H3.8218V23.5679H8.08008Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="social_list">
+                        <a href="#" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 6.40372 13.0003C6.40372 11.2509 7.09869 9.57305 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social_list">
+                        <a href="#" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none">
+                                <path d="M0.615818 10.1854C0.615818 9.01844 0.819818 7.91594 1.22182 6.88694C1.6059 5.88749 2.17653 4.97019 2.90332 4.18394C3.62862 3.408 4.45862 2.73704 5.36932 2.19044C6.30369 1.62516 7.31526 1.19871 8.37232 0.924436C9.44213 0.643518 10.5437 0.501848 11.6498 0.502936C13.3583 0.502936 14.9483 0.864436 16.4228 1.58444C17.8781 2.29131 19.1167 3.3761 20.0093 4.72544C20.9303 6.09794 21.3878 7.65043 21.3878 9.38144C21.3878 10.4194 21.2858 11.4349 21.0773 12.4279C20.8726 13.4204 20.5472 14.384 20.1083 15.2974C19.69 16.1816 19.1431 16.999 18.4853 17.7229C17.8242 18.4354 17.0236 19.0042 16.1333 19.3939C15.1667 19.8175 14.1211 20.0308 13.0658 20.0194C12.3323 20.0194 11.6003 19.8469 10.8773 19.5004C10.1543 19.1554 9.63532 18.6814 9.32332 18.0739C9.21382 18.4954 9.06382 19.1044 8.86432 19.9009C8.67232 20.6959 8.54332 21.2089 8.48632 21.4414C8.42632 21.6724 8.31532 22.0579 8.15332 22.5919C8.04345 22.9869 7.90251 23.3727 7.73182 23.7454L7.21582 24.7564C6.99267 25.1903 6.7432 25.6101 6.46882 26.0134C6.19732 26.4064 5.86132 26.8759 5.46082 27.4159L5.23732 27.4954L5.08882 27.3334C4.92832 25.6339 4.84582 24.6169 4.84582 24.2809C4.84582 23.2864 4.96432 22.1704 5.19832 20.9314C5.42782 19.6939 5.79082 18.1384 6.27832 16.2679C6.76582 14.3989 7.04482 13.2994 7.11982 12.9739C6.77632 12.2734 6.60232 11.3584 6.60232 10.2334C6.60232 9.33494 6.88282 8.49344 7.44532 7.70144C8.00932 6.91244 8.72182 6.51794 9.58582 6.51794C10.2473 6.51794 10.7603 6.73694 11.1278 7.17644C11.4968 7.61444 11.6768 8.16644 11.6768 8.83994C11.6768 9.55394 11.4398 10.5874 10.9628 11.9389C10.4858 13.2919 10.2488 14.3014 10.2488 14.9719C10.2488 15.6514 10.4918 16.2199 10.9778 16.6654C11.4574 17.1112 12.0917 17.3527 12.7463 17.3389C13.3403 17.3389 13.8908 17.2039 14.4023 16.9324C14.9058 16.6689 15.3416 16.2926 15.6758 15.8329C16.4036 14.8344 16.9225 13.6992 17.2013 12.4954C17.3453 11.8624 17.4563 11.2609 17.5253 10.6954C17.5988 10.1269 17.6303 9.58994 17.6303 9.07994C17.6303 7.20944 17.0363 5.75144 15.8558 4.70744C14.6693 3.66344 13.1243 3.14444 11.2238 3.14444C9.06232 3.14444 7.25482 3.84344 5.80732 5.24594C4.35832 6.64394 3.62932 8.42144 3.62932 10.5769C3.62932 11.0524 3.70132 11.5114 3.83782 11.9554C3.97132 12.3979 4.11682 12.7504 4.27432 13.0114C4.43032 13.2679 4.57732 13.5184 4.71082 13.7494C4.84582 13.9804 4.91632 14.1454 4.91632 14.2444C4.91632 14.5474 4.83682 14.9419 4.67632 15.4294C4.50982 15.9169 4.31332 16.1599 4.07632 16.1599C4.05382 16.1599 3.96082 16.1434 3.79882 16.1089C3.23776 15.9414 2.73108 15.6283 2.33032 15.2014C1.90497 14.759 1.5693 14.2384 1.34182 13.6684C1.11498 13.1005 0.93831 12.5137 0.813818 11.9149C0.679315 11.3484 0.612846 10.7678 0.615818 10.1854Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom_footer">
+                    <p class="text">Copyright ©2023 Tehzeeb Bakers. All Rights Reserved.</p>
+                </div>
+            </div>
+        
+            </div>
+        
+            <div class="footer_bottom_block">
+                <div class="main_container">
+                <div class="bottom_inner">
+                    <h2 >Maximize your online experience - Download now!</h2>
+                    <div class="footer_app_link">
+                        <a href="#!"><img src="../assets/images/appcta_1.png" alt="app"></a>
+                        <a href="#!"><img src="../assets/images/appcta.png" alt="app"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </footer>
+    </div>
+
+    
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+ 
+  </body>
+</html>

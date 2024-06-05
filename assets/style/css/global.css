@@ -1,0 +1,368 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*/ HTML5 display-role reset for older browsers /*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: #fff;
+  font-family: 'poppins', sans-serif;
+  color: #000000;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+img {
+  max-width: 100%;
+}
+strong {
+  font-weight: 600;
+}
+a {
+  color: #CC8209;
+  text-decoration: none;
+  transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;
+  font-family: 'poppins', sans-serif;
+}
+button {
+  font-family: 'poppins', sans-serif;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+}
+h3,
+h4 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+}
+p {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+/*  */
+/* bg color variable */
+/* Primary color variables */
+/* Content color variable */
+body {
+  background-color: #fff;
+}
+.primaryText {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #4C4C4C;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 1024px) {
+  .primaryText {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .primaryText {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+  .primaryText {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+.section_padding {
+  padding: 80px 0px;
+}
+.section_padding.bottom_zero {
+  padding-bottom: 0px;
+}
+.section_padding.form_top_space {
+  padding-top: 30px;
+}
+.section_padding.top_zero {
+  padding-top: 0px;
+}
+.primary_cta {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  border: 1px solid #A26301;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  color: #A26301;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 10em;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+.primary_cta:hover {
+  background-color: #A26301;
+  color: #fff;
+}
+@media only screen and (max-width: 1024px) {
+  .primary_cta {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 8px 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .primary_cta {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 10px 10px;
+  }
+}
+.grid_3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  grid-row-gap: 45px;
+  grid-column-gap: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  .grid_3 {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 25px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .grid_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+  .grid_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.primary_text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #4C4C4C;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 1024px) {
+  .primary_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .primary_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+  .primary_text {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+.primary_text.center {
+  text-align: center;
+}
+.primary_title {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #1B1B1B;
+  text-transform: uppercase;
+  letter-spacing: 6.72px;
+}
+@media only screen and (max-width: 1024px) {
+  .primary_title {
+    font-size: 25px;
+    line-height: 36px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .primary_title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+  .primary_title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+.secondary_title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #38464E;
+}
+@media only screen and (max-width: 1024px) {
+  .secondary_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.main_container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 200px) and (max-width: 1440px) {
+  .main_container {
+    padding: 0px 25px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .main_container {
+    width: 93%;
+  }
+}
+.primarybg {
+  background-color: #FDF9F3;
+}
+.form_bg {
+  background-color: #FEFBF8;
+}
+@media only screen and (max-width: 1024px) {
+  .section_padding {
+    padding: 40px 0px;
+  }
+  .form_bg {
+    background-color: #FEFBF8;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section_padding {
+    padding: 60px 0px;
+  }
+}
