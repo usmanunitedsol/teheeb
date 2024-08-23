@@ -1,0 +1,75 @@
+.dowload_app {
+  width: 90%;
+  margin: auto;
+}
+.dowload_app .download_app_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.dowload_app .download_app_block .barcode_bock {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.dowload_app .download_app_block .barcode_bock .barcode {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dowload_app .download_app_block .top_cnt {
+  text-align: center;
+}
+.dowload_app .download_app_block .top_cnt h3 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #141414;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.dowload_app .download_app_block .top_cnt h2 {
+  font-size: 60px;
+  line-height: 72px;
+  color: #141414;
+  font-weight: 700;
+  padding-bottom: 25spx;
+}
+@media screen and (min-width: 200px) and (max-width: 1080px) {
+  .dowload_app {
+    width: 100%;
+    margin: auto;
+  }
+  .dowload_app .download_app_block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dowload_app .download_app_block .barcode_bock {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .dowload_app .download_app_block .barcode_bock .barcode {
+    text-align: center;
+  }
+  .dowload_app .download_app_block .top_cnt h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .dowload_app .download_app_block .top_cnt h2 {
+    font-size: 34px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .dowload_app .download_app_block {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .dowload_app .download_app_block .barcode_bock {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+}

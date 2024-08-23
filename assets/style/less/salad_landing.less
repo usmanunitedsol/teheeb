@@ -1,0 +1,820 @@
+// salad landing page banner
+.salad_landing_page{
+
+      .banner_inner{
+         padding-top: 0px;
+        .banner_block{
+         .banner_content{margin: auto; max-width: 600px;padding-top: 0px;
+                .banner_title{
+                    font-family: 'poppins', sans-serif;  font-size: 50px; line-height: 58px; font-weight: 700; color: #fff; text-align: center; letter-spacing: 5px; text-transform: uppercase; padding-bottom: 15px;
+                }
+            }
+    }
+      }
+}
+
+
+//salads cards
+
+.salad_cards_outer{
+          .salad_subtitle{
+            font-size: 40px; line-height: 52px; color: rgba(49, 49, 49, 1); font-weight: 700;text-align:left;
+          }
+          .slider-wrapper 
+          {
+            .swiper-container {
+                position: static;
+                padding-bottom: 40px;
+            }
+          }
+          .salad_landing_swiper{padding-inline: 4%;}
+
+    }
+ 
+ .product_Card{
+    &.salad_cards{
+        transition: none; cursor: pointer;
+        .img_block{    text-align: center;  background: linear-gradient(178.69deg, #FFFFFF -4.65%, #EDEEF2 98.88%); padding: 30px; box-sizing: border-box;
+            .cnt_block{
+                &.size{padding: 0px;
+                   .product_title{margin-bottom: 15px; margin-top: 10px;}
+                }
+              
+            }
+        }
+        .cnt_block{
+             padding: 15px 30px;
+            .product_title {
+                font-size: 24px; line-height: 36px; margin-bottom: 0px;
+            }
+            .falvour{width: 75%;margin: auto; color: rgba(128, 128, 128, 1); padding-bottom: 5px;}
+            .price{font-size: 19px; line-height: 28px; color: rgba(7, 7, 7, 1); font-weight: 500;}
+
+            .product_cta{padding-top: 15px;}
+          
+        }
+        &:hover{
+            .cnt_block {
+                .product_title {
+                    display: block;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 1;
+
+                }
+            }
+        }
+            
+        .add_to_basket{background-color: rgba(197, 31, 60, 1);color: 
+            rgba(255, 255, 255, 1); font-weight: 500;}
+           .quantity{border-color: rgba(197, 31, 60, 1);
+                   .input-box {border-color: rgba(197, 31, 60, 1);}
+        } 
+
+ 
+     
+    }
+ }   
+
+
+//  <!-- create salad bowls -->
+.create_bowl_slider{padding-top: 20px;}
+.create_bowl_outer{
+    display: flex;  justify-content: center; gap: 15px;
+    .common_block{flex: 1;}
+    .create_bowl{border: 2px dashed rgba(0, 0, 0, 1); padding: 40px; background-color: rgba(254, 247, 235, 1);     display: flex; flex-direction: column; justify-content: center; align-items: center;  gap: 28px;
+       .create_circle{
+          border-radius: 50%; width: 240px; border: 2px dashed #c51f3c; height: 240px; display: flex; justify-content: center; align-items: center;background-color: rgba(255, 255, 255, 1);
+         .circle_title{font-size: 40px; line-height: 52px; font-weight: 400; color: 
+            rgba(197, 31, 60, 1); text-decoration: underline; text-transform: uppercase; }
+       }
+       .create_title{color:rgba(0, 0, 0, 1); font-size: 40px; line-height: 52px;width: 60%;margin: auto; text-align: center;text-transform: capitalize;}
+
+     
+    }
+    .image_bowl{
+        img{height: 100%; object-fit: cover;}
+       }
+}
+
+
+// <!-- fav salad bowls -->
+.fav_bowl_outer{
+    .salad_subtitle{font-weight: 600; padding-bottom: 30px;} padding-top: 20px;   
+
+}
+.fav_bowl{ 
+    display: grid; grid-template-columns: repeat(4,1fr); gap: 60px;
+     .salad_cards{
+         .img_block{padding-block: 40px;}
+         .cnt_block{
+            .product_title{font-weight: 600;    -webkit-line-clamp: 2;    display: flex;justify-content: center; gap: 10px;  
+             &:hover{ -webkit-line-clamp: 2; }
+            }
+            .product_cta{
+                .add_to_basket{
+                background-color: transparent; color: #c51f3c;
+                border-color: #c51f3c;
+                 &:hover{background-color: #c51f3c; color: #fff;}
+                }
+            }
+         }
+
+         &:hover{
+            .cnt_block{
+                .product_title{      -webkit-line-clamp: 2; display: flex;
+                }
+            }
+         }
+     }
+}
+
+
+// salad cards
+.salad_step_one{
+    .salad_subtitle{
+        text-align: center;
+        &:nth-child(2){padding-bottom: 50px;}
+    }
+  
+     .salad_cards{
+       .img_block{
+        .cnt_block { 
+            &.size{ .product_title{margin-bottom: 5px; margin-top: 20px;
+           
+            }
+            .size_cnt{color: #313131; font-weight: 500; width: 70%; margin: auto;}
+       }
+       
+       }
+       .product_img{display: block; padding-block: 40px;min-height:232px}
+
+       .whishlist_icon{display: none;}
+       
+     }
+
+     &.active{
+
+        .img_block{
+          .whishlist_icon{display: block;}
+        }
+    }  
+     }
+}
+
+.salad_page{
+   .grid3{
+      display: grid;  grid-template-columns: repeat(3,1fr); gap: 80px;
+   }
+   .salad_step_inner{width: 80%; margin: auto;}
+   .salad_bg{ background-color: #FBFBFB;}
+   .salad_add_block{
+    display: flex; justify-content: space-between;
+    .primary_title{font-size: 30px; line-height: 42px; font-weight: 700;color: #313131; }
+   }
+}
+
+
+.salad_step_two{
+   
+    .salad_subtitle{text-align: center;
+        &:nth-child(2){padding-bottom: 50px;}
+    }
+
+    .salad_cards{
+        .img_block{background: transparent;padding-bottom: 10px;
+          .whishlist_icon{display: none;}
+        }
+        .cnt_block{
+            padding-inline: 0px;}
+          &.active{
+            .cnt_block{
+        
+              
+              .quantity-distribution {
+                display: block;
+              }}
+              .img_block{
+                .whishlist_icon{display: block;}
+              }
+          }  
+    }
+    .cnt_block{
+        
+        .primary_text{padding-top: 10px; padding-inline: 15px;}
+        .quantity-distribution {
+          display: none;
+           background-color: #FFF6E8 ; padding: 15px 13px;    margin-top: 15px; margin-bottom: 5px; 
+          
+            .slidecontainer{display: flex; justify-content: center; align-items: center; gap: 10px;border-radius: 3px;
+                background: #FFF;padding: 9px 5px; margin-top: 10px;
+                box-shadow: 0px 0px 7.9px 0px rgba(0, 0, 0, 0.08);
+    
+                .range {
+                    @track-height: 8px;
+                    @track-color-fill: #339900;
+                    @track-color-background: #989898;
+                    @thumb-color:  #339900;
+                    @thumb-size: @track-height * 2;
+                  
+                    .rangeThumb() {
+                      appearance: none;
+                      width: @thumb-size;
+                      height: @thumb-size;
+                      border-radius: 50%;
+                      background: @thumb-color;
+                      cursor: pointer;
+                      border: none;
+                    }
+                  
+                    .rangeTrack() {
+                      background:#989898;
+                      height: @track-height;
+                      max-width: 100%;
+                      width: 100%;
+                      position: relative;
+                      border: none;
+                      border-radius: 20px;
+                      margin: @thumb-size / 1.5 0;
+                      appearance: none;
+                    }
+                  
+                    .rangeTrack();
+                  
+                    [type="range"] {
+                      appearance: none;
+                      background: transparent;
+                      width: 100%;
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      left: 0;
+                      right: 0;
+                      margin: auto;
+                      height: @thumb-size;
+                  
+                      &:focus {
+                        outline: none;
+                      }
+                  
+                      // Track
+                      &::-webkit-slider-runnable-track {
+                        background: transparent;
+                      }
+                  
+                      &::-moz-range-track {
+                        background: transparent;
+                      }
+                  
+                      // Thumb
+                      &::-webkit-slider-thumb {
+                        .rangeThumb();
+                      }
+                  
+                      &::-moz-range-thumb {
+                        .rangeThumb();
+                      }
+                  
+                      &::-ms-thumb {
+                        .rangeThumb();
+                      }
+                  
+                      // IE Styles
+                      &::-ms-fill-lower {
+                        background: @track-color-fill;
+                      }
+                  
+                      &::-ms-fill-upper {
+                        background: @track-color-background;
+                      }
+                  
+                      &::-ms-track {
+                        color: transparent;
+                        border: 0 solid transparent;
+                        background: transparent;
+                      }
+                  
+                      &::-ms-tooltip {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+       
+            }
+            
+          }
+    }
+
+
+// add to basket
+.basket_container {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background: #FEF7EB;
+  justify-content: space-between;
+  padding: 30px 20px;
+
+
+  .item {
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+      .item_tag{
+        font-size: 24px; line-height: 36px; font-weight: 600;
+        color: #000; width: 95%; margin: auto;    padding-top: 20px;
+        &.corn_full{width: 100%;}
+      }
+
+      .edit {
+        color: #C51F3C; text-decoration: underline;cursor: pointer;
+      }
+      
+      .close {
+        position: absolute;
+        top: -10px;
+        right: -25px;
+        cursor: pointer;
+      }
+
+      .percentage {
+        font-size: 22px; line-height: 32px;color: #535353;font-weight: 400; padding-bottom: 35px;
+      }
+      
+      .primary_cta {
+        background: #FFC700; color: #000; border-color: #000;min-width: 11em;
+      }
+  }
+  .cal_sign{
+    font-size: 54px; line-height: 66px; color: #000; font-weight: 500; 
+  }
+}
+
+
+// add_Cart_block
+
+.add_cart_block{ border-radius: 3px; background-color: #FEF7EB;padding: 30px;
+  &.grid3{gap: 40px;}
+}
+
+.add_Cart_item{
+ border: 1px solid #B3B3B2; background: #FFF; padding: 20px;
+  .top_cnt{
+       text-align: center;
+        .cart_item_title{font-size: 22px; line-height: 33px;color: #000; font-weight: 600; padding-block: 10px;}
+  }
+  .add_Cart_inner{
+ background: #FFF; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21);padding: 15px;
+ display: flex;     align-items: flex-start; justify-content: center;
+   .size_bowl{
+      text-align: center; border-right: 1px solid #CECECE; padding-right: 20px; 
+      .cart_inner_title{font-size: 20px; line-height: 28px;color: #000;font-weight: 600;}
+      .cart_msg{color: #390;}
+      .cart_img{padding-block: 10px;}
+      .edit{display: block;font-size: 14px; line-height: 20px;color: #2C2C2C; text-decoration: underline;}
+      .quantity{
+        &.primary_cta {
+          padding: 0px;
+          background: #FFC700;border: 0.5px solid #000;
+      }
+        .input-box {
+        background: #FFC700;border-inline: 0.5px solid #000; line-height: 20px;
+      }
+      }
+   }
+   .selected_quantity{
+      padding-left: 20px; text-align: center;
+      .selected_title{font-size: 17px; line-height: 25px; color: #000; width: 80%; margin: auto;}
+      .total_qty{font-size: 16px; line-height: 24px;color: #808080;}
+   }
+  }
+}
+
+.new_add_Cart_item{
+ border: 2px dashed #000; background: #FFFEFC; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21); padding: 50px;  display: flex; justify-content: center; align-items: center;
+  .new_add_title{
+ color: #FFC700; text-decoration: underline; text-align: center; font-size: 34px; font-weight: 400; line-height: 46px;  
+  }
+}
+
+
+
+
+@media screen and (min-width:200px) and (max-width:1024px) {
+
+    .salad_landing_page{
+      .banner_inner{
+         padding-top: 0px;
+        .banner_block{
+         .banner_content{
+            padding-top: 0px;
+                .banner_title{
+                    font-family: 'poppins', sans-serif;  font-size: 24px; line-height: 33px;
+                }
+            }
+    }
+      }
+}
+
+//salads cards
+
+.salad_cards_outer{
+    .salad_subtitle{
+      font-size: 24px; line-height: 34px; color: rgba(49, 49, 49, 1); font-weight: 700;text-align:left;
+      &:nth-child(2){padding-bottom: 30px;}
+    }
+    .slider-wrapper 
+    {
+      .swiper-container {
+          position: static;
+          padding-bottom: 40px;
+      }
+    }
+
+    .salad_landing_swiper{padding-inline: 3%;}
+
+}
+
+.product_Card{
+&.salad_cards{
+  .img_block{    padding: 15px;
+      .cnt_block{
+          &.size{padding: 0px;
+             .product_title{margin-bottom: 10px; margin-top: 10px;}
+          }
+        
+      }
+  }
+  .cnt_block{
+       padding: 15px;
+      .product_title {
+          font-size: 20px; line-height: 28px; margin-bottom: 0px;
+      }
+      .falvour{width: 100%;}
+      .price{font-size: 16px; line-height: 24px;}
+
+      .product_cta{padding-top: 10px;}
+    
+  }
+ 
+      
+
+}
+}   
+
+
+//  <!-- create salad bowls -->
+.create_bowl_outer{
+    display: flex;  flex-direction: column;
+    .common_block{flex: unset;}
+    .create_bowl{padding: 20px; gap: 15px;
+       .create_circle{
+          height: 200px; width: 200px;
+         .circle_title{font-size: 24px; line-height: 36px; }
+       }
+       .create_title{font-size: 24px; line-height: 36px; width: 100%;}
+
+     
+    }
+    .image_bowl{
+        img{height: auto; object-fit: none;}
+       }
+}
+
+
+.fav_bowl{ 
+    display: grid; grid-template-columns: repeat(auto-fill,minmax(230px,1fr)); gap: 30px;
+     .salad_cards{
+         .img_block{padding-block: 20px;}
+     }
+}
+
+
+.salad_page{
+    .grid3{
+       display: grid;  grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 40px;
+    }
+    .salad_step_inner{width: 100%; margin: auto;}
+    .salad_add_block{
+
+      .primary_title{font-size: 19px; line-height: 28px; }
+     }
+ }
+
+ // salad cards
+.salad_step_one{
+    .salad_subtitle{
+        text-align: center;
+        &:nth-child(2){padding-bottom: 30px;}
+    }
+  
+     .salad_cards{
+       .img_block{
+        .cnt_block { 
+            &.size{ .product_title{margin-bottom: 5px; margin-top: 30px;
+           
+            }
+            .size_cnt{color: #313131; font-weight: 500; width: 100%; margin: auto;}
+       }
+       }
+       .product_img{display: block; padding-block: 30px;min-height:232px}
+     }
+     }
+}
+
+
+// add to basket
+.basket_container {
+  flex-direction: column;
+  padding:  20px;
+
+
+  .item {
+
+      .item_tag{
+        font-size: 16px; line-height: 24px;    padding-top: 10px;
+  
+      }
+
+
+
+      .percentage {
+        font-size: 16px; line-height: 24px;color: #535353;font-weight: 400; padding-bottom: 20px;
+      }
+      
+      .primary_cta {
+       min-width: 10em;        margin-top: 20px;
+      }
+  }
+  .cal_sign{
+    font-size: 36px; line-height: 46px; 
+  }
+}
+
+//add card
+.add_Cart_item{
+
+   .top_cnt{
+  
+         .cart_item_title{font-size: 18px; line-height: 28px;}
+   }
+   .add_Cart_inner{
+
+  flex-direction: column; gap: 10px;         align-items: center;
+    .size_bowl{
+       text-align: center; border-right:0px; padding-right: 0px; 
+       .cart_inner_title{font-size: 18px; line-height: 26px;color: #000;font-weight: 600;}
+       .quantity{
+        &.primary_cta {
+        min-width: 11em;
+      }
+ 
+      }
+    }
+    .selected_quantity{
+       padding-left: 0px; text-align: center;
+       .selected_title{font-size: 16px; line-height: 24px; color: #000; width: 80%; margin: auto;}
+    
+    }
+   }
+ }
+ 
+ .new_add_Cart_item{
+  border: 2px dashed #000; background: #FFFEFC; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21); padding:100px 20px;  display: flex; justify-content: center; align-items: center;
+   .new_add_title{color: #FFC700; text-decoration: underline; text-align: center; font-size: 20px; font-weight: 400; line-height: 32px;  
+   }
+ }
+ 
+
+ .add_cart_block{ border-radius: 3px; background-color: #FEF7EB;padding: 20px;
+  &.grid3{gap: 20px;}
+}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    //  <!-- create salad bowls -->
+.create_bowl_outer{
+    display: flex;  flex-direction: row;
+    .common_block{flex: 1;}
+    .create_bowl{padding: 20px; gap: 15px;
+       .create_circle{
+          height: 200px; width: 200px;
+         .circle_title{font-size: 24px; line-height: 36px; }
+       }
+       .create_title{font-size: 24px; line-height: 36px; width: 100%;}
+
+     
+    }
+    .image_bowl{
+        img{height: 100%; object-fit: cover;}
+       }
+}
+
+
+.fav_bowl{ 
+    display: grid; grid-template-columns: repeat(2,minmax(0px,1fr)); gap: 30px;
+
+}
+
+
+.salad_page{
+    .grid3{
+       display: grid;  grid-template-columns: repeat(2,minmax(0px,1fr)); gap: 40px;
+    }
+ }
+
+}
+
+@media  screen and (min-width: 1025px) and (max-width: 1480px){
+    .salad_landing_page{
+        .banner_inner{
+           padding-top: 0px;
+          .banner_block{
+           .banner_content{margin: auto; max-width: 600px;padding-top: 0px;
+                  .banner_title{
+                      font-family: 'poppins', sans-serif;  font-size: 40px; line-height: 56px; font-weight: 700; color: #fff; text-align: center; letter-spacing: 5px; text-transform: uppercase; padding-bottom: 0px;
+                  }
+              }
+      }
+        }
+  }
+
+  .product_Card{
+    &.salad_cards{
+
+        .cnt_block{  
+            .falvour{width: 90%;}
+        }
+   
+            
+  
+
+       
+     
+    }
+ }   
+
+ //salads cards
+
+.salad_cards_outer{
+    .salad_subtitle{
+      font-size: 34px; line-height: 43px; 
+    }
+
+}
+
+
+   //  <!-- create salad bowls -->
+   .create_bowl_outer{
+
+    .create_bowl{
+       .create_circle{
+          height: 220px; width: 220px;
+         .circle_title{font-size: 32px; line-height: 42px; }
+       }
+       .create_title{font-size: 32px; line-height: 42px; width: 70%;}
+
+     
+    }
+
+}
+
+.fav_bowl{ 
+      gap: 40px;
+     .salad_cards{
+         .img_block{padding-block: 30px;}
+         .cnt_block{
+            .product_title{font-size: 20px; line-height: 30px; }
+            }
+
+         }
+
+
+     }
+
+
+     .salad_page{
+        .grid3{
+           display: grid;  grid-template-columns: repeat(3,1fr); gap: 60px;
+        }
+        .salad_step_inner{width: 100%; margin: auto;}
+     }
+
+
+     
+// add to basket
+.basket_container {
+
+
+
+  .item {
+
+      .item_tag{
+        font-size: 20px; line-height: 32px; 
+      }
+
+
+
+      .percentage {
+        font-size: 20px; line-height: 30px;color: #535353;font-weight: 400; padding-bottom: 30px;
+      }
+      
+
+  }
+  .cal_sign{
+    font-size: 46px; line-height: 56px; 
+  }
+}
+
+
+// add_Cart_block
+
+.add_cart_block{ border-radius: 3px; background-color: #FEF7EB;padding: 20px; box-sizing: border-box;
+  &.grid3{gap: 20px;}
+}
+
+.add_Cart_item{
+ border: 1px solid #B3B3B2; background: #FFF; padding: 10px;
+  .top_cnt{
+       text-align: center;
+        .cart_item_title{font-size: 20px; line-height: 32px;color: #000; font-weight: 600; padding-block: 10px;}
+  }
+  .add_Cart_inner{
+ background: #FFF; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21);padding: 10px;
+ display: flex;     align-items: flex-start; justify-content: center;
+   .size_bowl{
+      text-align: center; border-right: 1px solid #CECECE; padding-right: 5px; 
+      .cart_inner_title{font-size: 19px; line-height: 27px;color: #000;font-weight: 600;}
+    
+      .quantity{
+        &.primary_cta {
+           min-width: 9em;
+      
+      }
+       
+      }
+   }
+   .selected_quantity{
+      padding-left: 10px; text-align: center;
+  
+   }
+  }
+}
+
+.new_add_Cart_item{
+ border: 2px dashed #000; background: #FFFEFC; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21); padding: 40px;  display: flex; justify-content: center; align-items: center;
+  .new_add_title{
+ color: #FFC700; text-decoration: underline; text-align: center; font-size: 30px; font-weight: 400; line-height: 40px;  
+  }
+}
+
+
+}
+
+@media  screen and (min-width: 1280px) and (max-width: 1480px){
+
+// add_Cart_block
+
+.add_cart_block{ border-radius: 3px; background-color: #FEF7EB;padding: 20px; box-sizing: border-box;
+  &.grid3{gap: 20px;}
+}
+
+.add_Cart_item{
+ border: 1px solid #B3B3B2; background: #FFF; padding: 20px;
+  .top_cnt{
+       text-align: center;
+        .cart_item_title{font-size: 20px; line-height: 32px;color: #000; font-weight: 600; padding-block: 10px;}
+  }
+  .add_Cart_inner{
+ background: #FFF; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21);padding: 20px;
+ display: flex;     align-items: flex-start; justify-content: center;
+   .size_bowl{
+      text-align: center; border-right: 1px solid #CECECE; padding-right: 10px; 
+      .cart_inner_title{font-size: 19px; line-height: 27px;color: #000;font-weight: 600;}
+    
+      .quantity{
+        &.primary_cta {
+           min-width: 10em;
+      
+      }
+       
+      }
+   }
+   .selected_quantity{
+      padding-left: 10px; text-align: center;
+  
+   }
+  }
+}
+
+.new_add_Cart_item{
+ border: 2px dashed #000; background: #FFFEFC; box-shadow: 0px 0px 4.8px 0px rgba(0, 0, 0, 0.21); padding: 40px;  display: flex; justify-content: center; align-items: center;
+  .new_add_title{
+ color: #FFC700; text-decoration: underline; text-align: center; font-size: 30px; font-weight: 400; line-height: 40px;  
+  }
+}
+
+}

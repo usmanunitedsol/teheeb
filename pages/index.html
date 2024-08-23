@@ -681,6 +681,30 @@
             <script src="../assets/js/swiper-bundle.min.js"></script>
             <script src="../assets/js/main.js"></script>
             <script>
+                // search icon script
+                    $(document).ready(function() {
+                        if ($(window).width() <= 1027) {
+                            const $searchIcon = $('#search-icon');
+                            const $searchInput = $('#search-input');
+
+                            $searchIcon.on('click', function() {
+                                $searchInput.toggleClass('visible');
+                            });
+
+                            $(document).on('click', function(event) {
+                                if (!$(event.target).closest('.search_field').length && $searchInput.hasClass('visible')) {
+                                    $searchInput.removeClass('visible').val(''); // Hide input and clear the field
+                                }
+                            });
+                        }
+
+
+                        
+                    
+                    });
+
+            </script>
+            <script>
                 // Footer Accordioin
             jQuery(document).ready(function () {
                 jQuery
@@ -693,5 +717,6 @@
                     });
             });
             </script>
+            
         </body>
 </html>

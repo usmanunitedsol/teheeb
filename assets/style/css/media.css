@@ -465,7 +465,7 @@ body {
   outline: none;
   font-family: 'poppins', sans-serif;
   appearance: none;
-  background-image: url("../../images/select_arrow.png");
+  background-image: url("../images/select_arrow.png");
   background-repeat: no-repeat;
   background-position: 98% center;
   background-size: 10px;
@@ -801,6 +801,9 @@ body {
   .page-header .nav-section .nav-section-right .navigation li:last-child {
     padding-right: 0px;
   }
+  .page-header .nav-section .navigation {
+    display: none;
+  }
   .page-header .nav-section .navigation .close_side_bar {
     display: flex;
     width: 100%;
@@ -879,7 +882,7 @@ body {
     width: 26px;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+@media screen and (min-width: 1025px) and (max-width: 1480px) {
   .page-header .nav-section {
     padding: 20px 30px;
     gap: 10px;
@@ -1054,7 +1057,7 @@ footer .email_row .email_field .input_field input {
   font-size: 20px;
   line-height: 26px;
   color: #373737;
-  background-image: url("../../images/mail.webp");
+  background-image: url("../images/mail.webp");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: 4% center;
@@ -1192,7 +1195,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     font-size: 16px;
     line-height: 20px;
     color: #373737;
-    background-image: url("../../images/mail.png");
+    background-image: url("../images/mail.png");
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: 4% center;
@@ -1231,7 +1234,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     margin-bottom: 0px;
     padding: 20px 0px;
     border-bottom: 1px solid #B58F53;
-    background-image: url("../../images/footer_resp_icon.png");
+    background-image: url("../images/footer_resp_icon.png");
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: 98% center;
@@ -1675,7 +1678,7 @@ footer .footer_bottom_block .bottom_inner h2 {
   .product_Card .img_block .show_icon img {
     width: 20px;
   }
-  .product_Card .img_block span {
+  .product_Card .img_block span.bestseller {
     font-size: 18px;
     color: #42683F;
     position: absolute;
@@ -1720,7 +1723,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     line-height: 17px;
     padding: 5px 10px;
   }
-  .product_Card .cnt_block p {
+  .product_Card .cnt_block .price {
     font-size: 15px;
     line-height: 22px;
   }
@@ -1967,6 +1970,44 @@ footer .footer_bottom_block .bottom_inner h2 {
     color: #38464E;
     padding-top: 10px;
   }
+  .image_with_text {
+    flex-direction: column-reverse;
+  }
+  .image_with_text .text_block {
+    text-align: center;
+  }
+  .image_with_text .text_block .title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 15px;
+  }
+  .image_with_text .text_block p {
+    padding-bottom: 10px;
+  }
+  .image_with_text .text_block .cta_block {
+    padding-top: 10px;
+  }
+  .image_with_text .text_block .shop_timing .time {
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+  .image_with_text .text_block .store_address {
+    padding-bottom: 15px;
+  }
+  .image_with_text .text_block .store_address .address {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .image_with_text .text_block .location_details {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .image_with_text .common_block {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main_banner .banner_content .banner_text {
@@ -2004,6 +2045,39 @@ footer .footer_bottom_block .bottom_inner h2 {
   }
   .fieldset.eighty_percent {
     width: calc(80% - 10px);
+  }
+  .image_with_text {
+    flex-direction: row;
+  }
+  .image_with_text .common_block {
+    flex: 1;
+  }
+  .image_with_text .text_block {
+    text-align: left;
+  }
+  .image_with_text .text_block .title {
+    text-align: left;
+    padding-bottom: 25px;
+  }
+  .image_with_text .text_block p {
+    padding-bottom: 15px;
+  }
+  .image_with_text .text_block .cta_block {
+    padding-top: 15px;
+  }
+  .image_with_text .text_block .shop_timing .time {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .image_with_text .text_block .store_address .address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .image_with_text .text_block .location_details {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1480px) {
@@ -2086,7 +2160,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     line-height: 24px;
     padding: 7px 5px;
   }
-  .product_Card .img_block span {
+  .product_Card .img_block span.img_block {
     font-size: 18px;
   }
   .product_Card .img_block .img_cnt {
@@ -2107,7 +2181,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     padding-bottom: 15px;
     display: none;
   }
-  .product_Card .cnt_block p {
+  .product_Card .cnt_block .price {
     font-size: 18px;
     line-height: 30px;
     color: #313131;
@@ -2277,6 +2351,36 @@ footer .footer_bottom_block .bottom_inner h2 {
   .fieldset.eighty_percent {
     width: calc(80% - 10px);
   }
+  .image_with_text .common_block {
+    width: 100%;
+  }
+  .image_with_text .text_block .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .image_with_text .text_block p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .image_with_text .text_block .shop_timing .time {
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .image_with_text .text_block .store_address {
+    padding-bottom: 15px;
+  }
+  .image_with_text .text_block .store_address .address {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 2px;
+  }
+  .image_with_text .text_block .location_details {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
   .section_cnt {
@@ -2386,5 +2490,13 @@ footer .footer_bottom_block .bottom_inner h2 {
 @media screen and (min-width: 1025px) {
   .category_slider .slider-wrapper .swiper-container .swiper-wrapper .product_item:hover .card {
     display: flex;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .main_banner.about_us .banner_inner .banner_block .banner_content .banner_heading h3 {
+    text-align: center;
+  }
+  .main_banner.about_us .banner_inner .banner_block .banner_content .banner_text p {
+    text-align: center;
   }
 }

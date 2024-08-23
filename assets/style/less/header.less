@@ -51,7 +51,7 @@
 
 
     .nav-section-dropdown{
-      select{border:0px; background-color: transparent; font-size: 15px; line-height: 22px; color: #000000; font-weight: 400; text-transform: uppercase;  outline: none;    font-family: 'poppins', sans-serif; appearance: none; background-image: url("../../images/select_arrow.png"); background-repeat: no-repeat; background-position: 98% center; background-size: 10px;    padding-right: 20px;padding-left: 20px; box-sizing: border-box;}
+      select{border:0px; background-color: transparent; font-size: 15px; line-height: 22px; color: #000000; font-weight: 400; text-transform: uppercase;  outline: none;    font-family: 'poppins', sans-serif; appearance: none; background-image: url("../images/select_arrow.png"); background-repeat: no-repeat; background-position: 98% center; background-size: 10px;    padding-right: 20px;padding-left: 20px; box-sizing: border-box;}
   }
     .mobile_dropdown{display: none;}
     .nav-section-logo{ text-align: center;}
@@ -218,6 +218,7 @@
          }
     }
      .navigation{
+      display: none;
       .close_side_bar{  display: flex;width: 100%; justify-content: flex-end; svg{width: 20px;}}
             
           .nav_bar{display: flex; gap: 20px; flex-direction: column;
@@ -285,7 +286,10 @@
 
 }
 
-@media @media-query-mediumDesktop{
+
+  
+
+@media screen and (min-width:1025px) and (max-width:1480px) {
     .page-header{
         .nav-section{ padding: 20px 30px;  gap: 10px;
 

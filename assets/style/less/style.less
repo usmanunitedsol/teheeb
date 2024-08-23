@@ -38,6 +38,26 @@
 
 }
 
+// Location banner
+.main_banner {
+  &.about_us{
+    .banner_inner { top: 50%; transform: translateY(-50%); height: auto; bottom: unset; width: 100%;
+        .banner_block { text-align: left;            
+            .banner_content { background-color: transparent; padding-left:0px; padding-right: 0px; padding-block: 0px;margin: unset; max-width: 720px; text-align: left; 
+                .banner_heading {
+                    h3 { text-align: left; color: #000000}
+                }
+                .banner_text {
+                    p {
+                        text-align: left; color: #000;    font-size: 21px; font-weight: 400; line-height: 30px;
+                    }
+                }
+            }
+        }
+}
+  }
+}
+
 
 
 // image card
@@ -145,7 +165,7 @@
     .bdcrum_list {.flex(center,center,0px) ; flex-wrap: nowrap;  justify-content: unset;
       .bdcrum_item {.flex(center,center,0px);
         &:after {
-          content: url(../../images/right_arrow.png);
+          content: url(../images/right_arrow.png);
           display: block;
           margin: 0px 20px 0px;
     
@@ -180,7 +200,7 @@
        position: relative; 
         .whishlist_icon{position: absolute; top: 20px; right: 20px; img{width: 32px;}}
         .show_icon{position: absolute; top: 20px; right: 78px;}
-        span{font-size: 20px; color: #42683F; position: absolute; top: 0; left: 0; padding: 20px;}
+        span.bestseller{font-size: 20px; color: #42683F; position: absolute; top: 0; left: 0; padding: 20px;}
         .img_cnt{position: absolute;bottom: 0px;left: 0px; padding: 60px 40px 20px; box-sizing: border-box;text-align: center; 
            display: none;background: linear-gradient(178.9deg, rgba(255, 255, 255, 0) 5.64%, rgba(255, 255, 255, 0.7) 76.17%); transition: 0.3s all ease-in;
           p{    display: -webkit-box;
@@ -200,7 +220,7 @@
           }
           .cnt_block{
               .product_title{display: none; transition: 0.3s all ease-in;}
-              .weight{display: block; transition: 0.3s all ease-in;}
+              .weight{display: block; transition: 0.3s all ease-in;    min-height: 32px;}
             
           }
      }
@@ -236,7 +256,7 @@
            
         }
       
-         p{font-size: 24px; line-height: 32px; color:#070707;font-weight: 500;}
+         .price{font-size: 24px; line-height: 32px; color:#070707;font-weight: 500;}
          .product_cta{padding-top: 25px;transition: all 600ms ease;
             .primary_cta{min-width: 13em; text-transform: uppercase;font-weight: 500; letter-spacing: 1px;}
              &.hide{
@@ -484,6 +504,35 @@
 
 }
 
+
+// Two column section
+.image_with_text { display: flex; gap: 40px; justify-content: space-between; align-items: center;
+    .common_block { flex: 1}
+
+    .text_block { 
+        .title { text-align: left; color: #141414; font-size: 40px; font-weight: 500; letter-spacing: 0.5px; line-height: 50px; padding-bottom: 13px;}
+        p { padding-bottom: 25px; box-sizing: border-box; font-weight: 400; line-height: 30px; }
+        .cta_block { padding-top: 25px; box-sizing: border-box;}
+
+        
+        .shop_timing {
+            .time { display: flex; align-items: center; gap: 10px; color: #636363; padding-bottom: 25px; font-size: 19px; font-weight: 400; line-height: 26px;
+                &:before { content: "•"; color: #369F04; font-size: 30px; }
+            }
+        }
+
+        .store_address { padding-bottom: 25px;
+            .address { padding-bottom: 5px; font-size: 19px; font-weight: 500; line-height: 26px; }
+        }
+
+        
+        .location_details { font-size: 19px; line-height: 29px; }
+    }
+
+    .video_block { position: relative;
+        .video_pause_icon { position: absolute; top: 10px; right: 5px; cursor: pointer; }
+    }
+}
 
 // table_aside
 

@@ -1,0 +1,157 @@
+.faq_page {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.faq_page .about_tehzeeb {
+  border-radius: 9px;
+  background-color: #f5efe5;
+  padding: 40px;
+  max-width: 350px;
+  width: 100%;
+}
+.faq_page .about_tehzeeb .about_tehzeeb_block .side_bar_title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  color: #131313;
+}
+.faq_page .about_tehzeeb .about_tehzeeb_block .side_bar_text {
+  color: #5e5e5e;
+  padding-block: 10px;
+  box-sizing: border-box;
+}
+.faq_page .faq_acc {
+  max-width: calc(100% - 500px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.faq_page .faq_acc .faq_acc_ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.faq_page .faq_acc .faq_acc_ul .faq_acc_li {
+  border: 1px dashed #b0b0b0;
+  border-radius: 9px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+  padding: 0px 0px;
+}
+.faq_page .faq_acc .faq_acc_ul .faq_acc_li .accordion {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  padding: 30px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.faq_page .faq_acc .faq_acc_ul .faq_acc_li .accordion .question {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #141414;
+}
+.faq_page .faq_acc .faq_acc_ul .faq_acc_li .panel {
+  width: 90%;
+  margin: 0 auto;
+  padding: 55px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #CCC;
+  display: none;
+}
+.faq_page .faq_acc .faq_acc_ul .faq_acc_li.active-li {
+  background: rgba(245, 239, 229, 0.5);
+  border-radius: 10px;
+  border: 1px dashed #6c6565;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.faq_page .faq_acc .active .icon:after {
+  content: "-";
+  font-size: 40px;
+}
+.faq_page .faq_acc .icon:after {
+  content: "+";
+  font-size: 25px;
+}
+.dashed {
+  border-top: 1px dashed #B0B0B0;
+}
+/********************************************************* media query for faq ************************************************************************/
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+  .faq_page {
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+  .faq_page .about_tehzeeb {
+    max-width: 100%;
+    padding: 0px;
+    margin: 20px 0px;
+  }
+  .faq_page .about_tehzeeb .about_tehzeeb_block {
+    padding: 20px;
+  }
+  .faq_page .about_tehzeeb .about_tehzeeb_block .side_bar_title {
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 15px;
+  }
+  .faq_page .faq_acc {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .faq_page .faq_acc .faq_acc_ul {
+    width: 100%;
+  }
+  .faq_page .faq_acc .faq_acc_ul .faq_acc_li .accordion {
+    padding: 20px;
+  }
+  .faq_page .faq_acc .faq_acc_ul .faq_acc_li .panel {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .faq_page .about_tehzeeb {
+    max-width: 100%;
+  }
+  .faq_page .faq_acc {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .faq_page .faq_acc .faq_acc_ul {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+  .faq_page {
+    justify-content: center;
+    gap: 40px;
+  }
+  .faq_page .about_tehzeeb {
+    max-width: 250px;
+    width: 100%;
+  }
+  .faq_page .about_tehzeeb .faq_acc {
+    max-width: calc(100% - 360px);
+  }
+  .faq_page .about_tehzeeb .faq_acc .faq_acc_ul {
+    gap: 20px;
+  }
+  .faq_page .about_tehzeeb .faq_acc .faq_acc_ul .faq_acc_li .accordion {
+    padding: 20px 20px;
+  }
+  .faq_page .about_tehzeeb .faq_acc .faq_acc_ul .faq_acc_li .panel {
+    padding: 30px 20px;
+  }
+}

@@ -97,7 +97,7 @@
   outline: none;
   font-family: 'poppins', sans-serif;
   appearance: none;
-  background-image: url("../../images/select_arrow.png");
+  background-image: url("../images/select_arrow.png");
   background-repeat: no-repeat;
   background-position: 98% center;
   background-size: 10px;
@@ -433,6 +433,9 @@
   .page-header .nav-section .nav-section-right .navigation li:last-child {
     padding-right: 0px;
   }
+  .page-header .nav-section .navigation {
+    display: none;
+  }
   .page-header .nav-section .navigation .close_side_bar {
     display: flex;
     width: 100%;
@@ -511,7 +514,7 @@
     width: 26px;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1480px) {
+@media screen and (min-width: 1025px) and (max-width: 1480px) {
   .page-header .nav-section {
     padding: 20px 30px;
     gap: 10px;

@@ -405,7 +405,7 @@ footer .email_row .email_field .input_field input {
   font-size: 20px;
   line-height: 26px;
   color: #373737;
-  background-image: url("../../images/mail.webp");
+  background-image: url("../images/mail.webp");
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: 4% center;
@@ -543,7 +543,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     font-size: 16px;
     line-height: 20px;
     color: #373737;
-    background-image: url("../../images/mail.png");
+    background-image: url("../images/mail.png");
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: 4% center;
@@ -582,7 +582,7 @@ footer .footer_bottom_block .bottom_inner h2 {
     margin-bottom: 0px;
     padding: 20px 0px;
     border-bottom: 1px solid #B58F53;
-    background-image: url("../../images/footer_resp_icon.png");
+    background-image: url("../images/footer_resp_icon.png");
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: 98% center;

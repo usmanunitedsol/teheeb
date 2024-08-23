@@ -89,7 +89,7 @@
      .img_block{
         .whishlist_icon{ img{width: 20px;}}
         .show_icon{    right: 50px; img{width: 20px;}}
-        span{font-size: 18px; color: #42683F; position: absolute; top: 0; left: 0; padding: 20px;}
+        span.bestseller{font-size: 18px; color: #42683F; position: absolute; top: 0; left: 0; padding: 20px;}
       
      }
      border:  1.5px solid #a2630191;
@@ -123,7 +123,7 @@
  
         }
       
-         p{font-size: 15px; line-height: 22px;}
+         .price{font-size: 15px; line-height: 22px;}
          .product_cta{padding-top: 15px;transition: all 600ms ease;
              .primary_cta{min-width: 10em; padding: 8px 10px;}
              &.hide{
@@ -326,6 +326,27 @@
     .contactus_subtitle{font-size: 20px;line-height: 30px; color: #38464E; padding-top: 10px;} 
 }
 
+
+.image_with_text { flex-direction: column-reverse;
+    .text_block {text-align: center;
+        .title { text-align: center; font-size: 22px; line-height: 30px; padding-bottom: 15px; }
+        p { padding-bottom: 10px;}
+        .cta_block { padding-top: 10px;}
+
+        .shop_timing {
+            .time { justify-content: center; font-size: 16px; line-height: 22px; padding-bottom: 15px; }
+        }
+
+        .store_address {  padding-bottom: 15px;
+            .address { font-size: 16px; line-height: 22px;}
+        }
+
+        
+        .location_details { font-size: 16px; line-height: 24px;}
+    }
+    .common_block { width: 100%;}
+  }
+
  
  }
  
@@ -361,6 +382,26 @@
             &.ten_percent{width: calc(20% - 10px) }
             &.eighty_percent{width: calc(80% - 10px)}
         }
+
+        .image_with_text { flex-direction: row;
+            .common_block { flex: 1}
+            .text_block { text-align: left;
+                .title { text-align: left; padding-bottom: 25px;}
+                p { padding-bottom: 15px;}
+                .cta_block { padding-top: 15px;}
+    
+                
+                .shop_timing {
+                    .time { font-size: 14px; line-height: 20px; margin: 0; justify-content: flex-start; }
+                }
+    
+                .store_address { 
+                    .address { font-size: 14px; line-height: 20px; }
+                }
+    
+                .location_details { font-size: 14px; line-height: 20px; }
+            }
+          }  
        
  }
  
@@ -437,7 +478,7 @@
  .product_Card{
      .img_block{
      
-        span{font-size: 18px;}
+        span.img_block{font-size: 18px;}
         .img_cnt{ padding: 16px 20px; 
       
         }
@@ -449,7 +490,7 @@
            
         }
       
-         p{font-size: 18px; line-height: 30px; color:#313131;font-weight: 500;}
+         .price{font-size: 18px; line-height: 30px; color:#313131;font-weight: 500;}
          .product_cta{padding-top: 15px;transition: all 600ms ease;
             .primary_cta{min-width: 11em; text-transform: uppercase;font-weight: 500;}
              &.hide{
@@ -582,6 +623,25 @@
     &.eighty_percent{width: calc(80% - 10px)}
 }
 
+.image_with_text {
+    .common_block { width: 100%}
+    .text_block {
+        .title { font-size: 28px; line-height: 38px; }
+        p { font-size: 16px; line-height: 26px; margin-bottom: 10px; }
+
+        .shop_timing {
+            .time { padding-bottom: 15px; font-size: 16px; line-height: 22px; margin: 0; }
+        }
+
+        .store_address { padding-bottom: 15px;
+            .address { font-size: 16px; line-height: 22px; margin-bottom: 2px; }
+        }
+
+        
+        .location_details { padding-bottom: 15px; margin-bottom: 0; }
+    }
+  }
+
  
  }
  
@@ -694,4 +754,24 @@
          }
            
      }
+ }
+
+
+ @media screen and (min-width: 200px) and (max-width: 768px) {
+    .main_banner {
+      &.about_us{
+        .banner_inner {
+            .banner_block {
+                .banner_content{
+                    .banner_heading {
+                        h3 { text-align: center;}
+                    }
+                    .banner_text {
+                        p { text-align: center;}
+                    }
+                }
+            }
+        } 
+      }
+    }
  }

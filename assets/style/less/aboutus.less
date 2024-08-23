@@ -1,0 +1,98 @@
+@import (reference) 'global.less';
+
+.two_col_outer {
+    .image_with_text { 
+        .text_block {
+            .title { padding-bottom: 40px;}
+            p { color: #313131;}
+        }
+    }
+}
+
+.Corporate_Concerns {
+    .sec_content_top { text-align: center; max-width: 70%; margin: auto; padding-bottom: 30px; 
+        h3 { color: #141414; font-size: 40px; line-height: 47px; font-weight: 500; padding-bottom: 20px; text-transform: uppercase; }
+        p { padding-bottom: 20px; color: #313131;}
+    }
+
+    .inner_sec_gap { padding-top: 40px; box-sizing: border-box; 
+        .why_us_inner { background-color: #141414; display: flex; align-items: center; 
+            .why_us_carousel { max-width: 550px; padding: 30px 60px; box-sizing: border-box;
+                .swiper-container { width: 100%; height: 100%; padding-block: 110px;
+                    .why_block { display: flex; align-items: center; justify-content: center; flex-direction: column; grid-gap: 25px;
+                        h3 { font-size: 40px; line-height: 43px; font-weight: 500; text-align: center; color: #fff; }
+                        p { font-size: 25px; line-height: 31px; color: #fff; text-align: center; font-weight: 400; }
+                        .iso_icon { padding-top: 40px; }
+                    }
+    
+                    .swiper-dots { bottom: 0px; position: absolute; width: 100%; left: 0;
+                        display: flex; justify-content: center; align-items: center; grid-gap: 8px; padding-top: 30px;
+                        .swiper-pagination-bullet { background: transparent; border: 1px solid transparent; width: 20px; height: 20px; border-radius: 100%; display: flex; align-items: center; justify-content: center; transition: .3s ease-in-out; 
+                            span { display: block; border-radius: 100%; width: 10px; height: 10px; border: 2px solid #fff; transition: .3s ease-in-out;
+                            }
+                        }
+    
+                        .swiper-pagination-bullet-active { border: 1px solid #ffffff; border-color: #fff; background-color: transparent;
+                            span { background-color: #fff; border: 1px solid #fff; }
+                        }
+                    }
+                }
+            }
+
+            .why_us_video { width: calc(100% - 550px);
+                img { width: 100%; height: 600px; object-fit: cover; }
+            }
+        }
+    }
+}
+
+
+@media @media-query-base {
+    .Corporate_Concerns {
+        .sec_content_top { max-width: 100%; padding-bottom: 15px;
+            h3 { font-size: 25px; line-height: 36px; padding-bottom: 10px; }
+            p { padding-bottom: 10px;}
+        }
+
+        .inner_sec_gap { padding-top: 15px;
+            .why_us_inner { flex-wrap: wrap; 
+                .why_us_carousel { max-width: 100%; padding: 30px 20px;
+                    .swiper-container { padding-block: 0;
+                        
+                    .why_block { display: flex; align-items: center; justify-content: center; flex-direction: column; grid-gap: 10px;
+                        h3 { font-size: 22px; line-height: 32px; }
+                        p { font-size: 18px; line-height: 26px; }
+                        .iso_icon { padding-top: 0px; padding-bottom: 40px; }
+                    }
+
+                    .swiper-pagination-bullets { bottom: 0px; }
+                    }
+                }
+
+                .why_us_video { width: 100%; height: unset;
+                    img { object-fit: unset; height: auto; }
+                }
+            }
+        }
+    }
+}
+
+
+@media @media-query-tablet {
+    .Corporate_Concerns {
+        .inner_sec_gap { padding-top: 25px;
+            .why_us_inner { 
+                .why_us_carousel { max-width: 300px; padding: 30px 20px;
+                    .swiper-container { padding-block: 0;
+                        
+                    .why_block { display: flex; align-items: center; justify-content: center; flex-direction: column; grid-gap: 10px;}
+
+                    .swiper-pagination-bullets { bottom: 0px; }
+                    }
+                }
+
+                .why_us_video { width: calc(100% - 300px); }
+            }
+        }
+    }
+}

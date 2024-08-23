@@ -1,0 +1,241 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*/ HTML5 display-role reset for older browsers /*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background:#fff;
+  font-family: 'poppins', sans-serif;
+	color:#000000;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img{max-width: 100%;}
+strong{font-weight: 600;}
+a { color:#CC8209; text-decoration:none; transition: background-color 0.4s ease 0s, border 0s ease 0s, color 0.4s ease 0s, opacity 0.4s ease-in-out 0s;font-family: 'poppins', sans-serif; }
+button{font-family: 'poppins', sans-serif;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2{font-family: 'poppins', sans-serif; font-weight: 700;}
+h3, h4{font-family: 'poppins', sans-serif; font-weight: 600;}
+p{font-family: 'poppins', sans-serif; font-weight:400;} 
+input[type=radio] { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 20px; height: 20px; border: 3px solid #9677EF; border-radius: 50%; outline: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); background-color: #ffffff;}
+input[type="radio"]:checked { background-color: #9677EF; border-color: #9677EF; box-shadow: inset 0 0 0 4px white; }
+
+
+/*  */
+
+
+    /* bg color variable */
+    @primary_bg:#FDF9F3;
+    @primarywhiteColor:#fff;
+    @secondary_bg:#F0E7D7;
+    @section_bg:#FFFFFF;
+    /* Primary color variables */
+    @primary_color:#C5203C;
+    @secondary_color:#CC8209;
+    @primary_cta_color:#A26301;
+    /* Content color variable */
+    @title_color:#1B1B1B;
+    @secondary_title_color:#313131;
+    @text_color:#4C4C4C;
+    @gray:#686868;
+    
+  
+
+
+body{
+    background-color:    @primarywhiteColor;
+}
+
+
+// Variables for breakpoints
+@breakpoints-base: 1024px;
+@breakpoints-tablet: 768px;
+@breakpoints-mediumDesktop: 1480px;
+
+// Media query variables
+@media-query-base: ~"only screen and (max-width: @{breakpoints-base})";
+@media-query-tablet: ~"only screen and (min-width: @{breakpoints-tablet}) and (max-width: @{breakpoints-base})";
+@media-query-mediumDesktop: ~"only screen and (min-width: @{breakpoints-base}) and (max-width: @{breakpoints-mediumDesktop})";
+
+// Define mixins
+
+
+.fullContainer() {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mainContainer() {
+    max-width: 1600px; margin: auto; padding:0px 30px; box-sizing: border-box;
+
+  @media screen and (min-width: 200px) and (max-width: 1440px) {
+    padding: 0px 25px;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1480px) {
+    width: 93%;
+  }
+}
+
+
+.PrimaryCta() {
+    font-size: 18px; line-height: 26px; font-weight: 400; border: 1px solid #A26301; padding: 10px 15px; box-sizing: border-box; color:@primary_cta_color; background-color: transparent; border-radius: 50px; cursor: pointer; display: inline-block; min-width: 10em; text-align: center; transition: .3s ease-in; 
+  
+    &:hover {
+      background-color: @primary_cta_color;
+      color: #fff;
+    }
+  
+     @media @media-query-base  {
+      font-size: 15px;
+      line-height: 19px;
+      padding: 8px 10px;
+    }
+  
+    @media  @media-query-tablet {
+      font-size: 17px;
+      line-height: 25px;
+      padding: 10px 10px;
+    }
+  }
+
+  .primaryTitle()
+  {
+    font-size: 48px; line-height: 60px; font-weight: 600; padding-bottom:20px; text-align: center; color: @title_color; text-transform: uppercase;letter-spacing: 6.72px;
+	@media @media-query-base{
+		font-size: 25px; line-height: 36px; padding-bottom: 10px;letter-spacing:2px;
+	}
+	@media @media-query-tablet{
+		font-size: 30px; line-height: 40px; padding-bottom: 10px;
+	}
+	@media @media-query-mediumDesktop{
+		font-size: 40px; line-height: 50px;
+	}
+  }
+
+  .secondarytitle()
+  {
+    font-size: 18px; line-height: 28px; font-weight: 600; color: #38464E;  
+	@media @media-query-base{
+		font-size: 16px; line-height: 24px; 
+	}
+	
+
+  }
+
+
+  .primaryText{
+	font-size: 18px; line-height: 28px; font-weight: 400; color: @text_color; padding-bottom: 0px;
+	@media @media-query-base{
+		font-size: 16px; line-height: 26px;
+	}
+	@media @media-query-tablet{
+		font-size: 16px; line-height: 26px;
+	}
+	@media @media-query-mediumDesktop{
+		font-size: 18px; line-height: 29px;
+	}
+}
+
+
+
+.flex(@justify, @align, @gap) { display: flex; justify-content: @justify; align-items: @align; gap: @gap; }
+.grid(@gridColumn, @gap){display: grid; grid-template-columns: @gridColumn; grid-gap: @gap;}
+
+
+
+.grid3(){
+	display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); grid-row-gap: 45px; grid-column-gap: 35px;
+	@media @media-query-base{
+		grid-template-columns: repeat(auto-fill,minmax(140px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 25px;
+	}
+  @media  screen and (min-width:650px) and (max-width:768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media @media-query-tablet{
+    grid-template-columns: repeat(3, 1fr);
+  }
+	@media @media-query-mediumDesktop{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
+//global classes
+.section_padding{
+    padding: 80px 0px;
+    &.bottom_zero{
+        padding-bottom: 0px;
+    }
+    &.form_top_space{padding-top: 30px;}
+    &.top_zero{
+        padding-top: 0px;
+    }
+}
+.primary_cta{
+    .PrimaryCta();
+}
+
+.grid_3{
+    .grid3();
+}
+
+.primary_text{
+    .primaryText;
+    &.center{text-align: center;}
+}
+.primary_title{
+    .primaryTitle
+}
+.secondary_title{  .secondarytitle()} 
+
+.main_container{.mainContainer()}
+.primarybg{background-color: @primary_bg;}
+.form_bg{background-color: #FEFBF8;}
+
+
+@media @media-query-base{
+    .section_padding{padding:40px 0px;}
+    .form_bg{background-color: #FEFBF8;}
+}
+
+@media @media-query-tablet{
+    .section_padding{padding:60px 0px;}
+}
+
